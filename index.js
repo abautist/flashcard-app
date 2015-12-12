@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var port = 3000;
 var expressJWT = require("express-jwt");
 var jwt = require("jsonwebtoken");
 var app = express();
@@ -46,4 +47,6 @@ app.get("/*", function(req, res) {
 	res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
-app.listen(3000);
+app.listen(port, function() {
+	console.log("How many ports? " + port);
+});

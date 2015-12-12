@@ -22,13 +22,13 @@ router.route("/:id")
 			if (err) return res.status(500).send(err);
 			res.send(flashcard);
 		});
-	});
+	})
 	.put(function(req, res) {
 		Flashcard.findByIdAndUpdate(req.params.id, function(err, flashcard) {
 			if (err) return res.status(500).send(err);
 			res.send({message: 'success'});
 		});
-	});
+	})
 	.delete(function(req, res) {
 		Flashcard.findByIdAndRemove(req.params.id, function(err, flashcard) {
 			if (err) return res.status(500).send(err);
