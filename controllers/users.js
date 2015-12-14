@@ -20,7 +20,7 @@ router.route("/")
 				});
 			}
 		});
-	});
+});
 
 router.get("/:id", function(req, res) {
 	User.findById(req.params.id, function(err, user) {
