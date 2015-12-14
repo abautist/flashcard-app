@@ -14,6 +14,10 @@ app.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
 		templateUrl: "app/views/flashcards.html",
 		controller: "FlashcardDeleteCtrl"
 	})
+	.when("/flashcards/update/:id", {
+		templateUrl: "app/views/update.html",
+		controller: "FlashcardUpdateCtrl"
+	})
 	.when("/login", {
 		templateUrl: "app/views/userLogin.html",
 		controller: "LoginCtrl"

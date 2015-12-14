@@ -37,6 +37,26 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			console.log(data);
 		});
 }])
+.controller('FlashcardUpdateCtrl', [
+	'$scope',
+	'$location',
+	'$routeParams',
+	'Flashcard',
+	function($scope, $location, $routeParams, Flashcard) {			
+		Flashcard.findByIdAndUpdate({id:$routeParams.id}, params, function success(params, data) {
+			var params = {
+				front: $scope.front,
+				back: $scope.back,
+				image: $scope.image,
+				category: $scope.category
+			}
+			console.log(params);
+			params.$save();
+			$location.path("/");
+		}, function error(data) {
+			console.log(data);
+		});
+}])
 .controller("NavCtrl", ['$scope', 'Auth', function($scope, Auth) {
 	$scope.logout = function() {
 		Auth.removeToken();
