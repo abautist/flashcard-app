@@ -10,9 +10,15 @@ router.route("/")
 		});
 	})
 	.post(function(req, res) {
-		User.create(req.body, function(err, user) {
-			if (err) return res.status(500).send(err);
-			res.send(user);
+		User.find({email: req.body.email}, function(err, user) {
+			if (user) {
+				return res.send({message: "User already exists"});
+			} else {
+				User.create(req.body, function(err, user) {
+					if (err) return res.status(500).send(err);
+					res.send(user);
+				});
+			}
 		});
 	});
 
