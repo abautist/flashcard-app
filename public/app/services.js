@@ -2,6 +2,17 @@ angular.module("FlashcardServices", ["ngResource"])
 .factory("Flashcard", ["$resource", function($resource) {
 	return $resource("http://localhost:3000/api/flashcards/:id");
 }])
+.factory("Flashcard", ["$resource", function($resource) {
+	return $resource("http://localhost:3000/api/flashcards/:id", null,
+	{
+		"update": { 
+			method: "PUT",
+			params: {
+				id: "@id"
+			}
+		}
+	});
+}])
 .factory("Auth", ["$window", function($window) {
 	return {
 		saveToken: function(token) {

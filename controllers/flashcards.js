@@ -24,15 +24,16 @@ router.route("/:id")
 		});
 	})
 	.put(function(req, res) {
-		Flashcard.findByIdAndUpdate(req.params.id, function(err, flashcard) {
+		console.log(req.body);
+		Flashcard.findByIdAndUpdate(req.params.id, req.body, function(err, flashcard) {
 			if (err) return res.status(500).send(err);
-			res.send({message: 'success'});
+			res.send({'message': 'success'});
 		});
 	})
 	.delete(function(req, res) {
 		Flashcard.findByIdAndRemove(req.params.id, function(err, flashcard) {
 			if (err) return res.status(500).send(err);
-			res.send({message: 'success'});
+			res.send({'message': 'success'});
 		});
 	});
 

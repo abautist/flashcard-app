@@ -43,19 +43,17 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'$routeParams',
 	'Flashcard',
 	function($scope, $location, $routeParams, Flashcard) {			
-		Flashcard.findByIdAndUpdate({id:$routeParams.id}, params, function success(params, data) {
+		$scope.putFlashcard = function () {
+			var updatedFlashcard = Flashcard.get({ id: $routeParams.id });
 			var params = {
 				front: $scope.front,
 				back: $scope.back,
 				image: $scope.image,
 				category: $scope.category
-			}
-			console.log(params);
-			params.$save();
+			} 
+			Flashcard.update({id:$routeParams.id}, params);
 			$location.path("/");
-		}, function error(data) {
-			console.log(data);
-		});
+		}	
 }])
 .controller("NavCtrl", ['$scope', 'Auth', function($scope, Auth) {
 	$scope.logout = function() {
