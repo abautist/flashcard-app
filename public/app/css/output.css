@@ -10,4 +10,15 @@
   height: 600px;
   text-align: center; }
 
+.splash-card {
+  background: red;
+  width: 5px;
+  height: 5px;
+  list-style: none;
+  margin-bottom: 5px;
+  visibility: hidden; }
+
+.on {
+  visibility: visible; }
+
 /*# sourceMappingURL=output.css.map */

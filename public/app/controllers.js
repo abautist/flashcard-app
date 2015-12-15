@@ -1,6 +1,8 @@
 angular.module("FlashcardCtrls", ['FlashcardServices'])
-.controller("FlashcardCtrl", ['$scope', 'Flashcard', function($scope, Flashcard) {
+.controller("FlashcardCtrl", ['$scope', '$interval', 'Flashcard', function($scope, $interval, Flashcard) {
 	$scope.flashcards = [];
+	$scope.selectedIdx = null;
+	$scope.timer = null;
 
 	Flashcard.query(function success(data) {
 		var shuffleData = shuffle(data);	
@@ -23,6 +25,17 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 		}
 		return arr;
 	}
+
+	function start() {
+		$scope.timer = $interval(function () {
+			$scope.selectedIdx = $scope.selectedIdx === null ? 0 : $scope.selectedIdx+1;
+				if($scope.selectedIdx === $scope.flashcards.length) {
+					$scope.selectedIdx = 0;
+				}
+		}, 1000);
+	}
+	start();
+	
 }])
 .controller('FlashcardNewCtrl', [
 	'$scope',
