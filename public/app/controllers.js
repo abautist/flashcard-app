@@ -1,5 +1,5 @@
 angular.module("FlashcardCtrls", ['FlashcardServices'])
-.controller("FlashcardCtrl", ['$scope', '$interval', 'Flashcard', function($scope, $interval, Flashcard) {
+.controller("FlashcardCtrl", ['$scope', '$interval', '$modal', 'Flashcard', function($scope, $interval, $modal, Flashcard) {
 	$scope.flashcards = [];
 	$scope.selectedIdx = null;
 	$scope.timer = null;
@@ -35,7 +35,23 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 		}, 1000);
 	}
 	start();
-	
+
+	 $scope.showUpdate = function(idx) {
+		var modalInstance = $modal.open({
+			templateUrl: "app/views/update.html",
+			controller: "FlashcardUpdateCtrl",
+			controllerAs: "ctrl",
+			size: "md",
+			resolve: {
+				item: function() {
+					return $scope.flashcards[idx];
+				},
+				index: function() {
+					return idx;
+				}
+			}
+		});	
+	}
 }])
 .controller('FlashcardNewCtrl', [
 	'$scope',
@@ -70,16 +86,23 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'$location',
 	'$routeParams',
 	'Flashcard',
-	function($scope, $location, $routeParams, Flashcard) {			
+	"item",
+	function($scope, $location, $routeParams, Flashcard, item) {			
+		console.log("********************");
+		console.log(item);
+		console.log("********************");
+
+		$scope.item = item;
+		console.log($scope.item._id);
+		
 		$scope.putFlashcard = function () {
-			var updatedFlashcard = Flashcard.get({ id: $routeParams.id });
 			var params = {
 				front: $scope.front,
 				back: $scope.back,
 				image: $scope.image,
 				category: $scope.category
 			} 
-			Flashcard.update({id:$routeParams.id}, params);
+			Flashcard.update({id: $scope.item._id}, params);
 			$location.path("/");
 		}	
 }])

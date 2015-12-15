@@ -11,7 +11,7 @@ router.route("/")
 	})
 	.post(function(req, res) {
 		User.find({email: req.body.email}, function(err, user) {
-			if (user) {
+			if (user.length > 0) {
 				return res.send({message: "User already exists"});
 			} else {
 				User.create(req.body, function(err, user) {

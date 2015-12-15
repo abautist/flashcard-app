@@ -1,8 +1,13 @@
-<h1>Update yo flashcard, mate!</h1>
-<div class="well container">
-	<form ng-submit='putFlashcard()'>
+<div class="modal-header">
+    <h3 class="modal-title">Update yo flashcard, mate!</h3>
+</div>
+<div class="modal-body">
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">	
+	<form ng-submit='putFlashcard()' data-foobar="{{flashcard.front}}">
 		<div class="form-group">
 			<div class="row">
+				{{ item.front }}
+				{{ item._id }}
 				<label>Front</label>
 				<input type="text" ng-model="front" class="form-control">
 			</div>
@@ -21,7 +26,10 @@
 			<div class="row">
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
+		</div>
 	</form>
+	</div>
 </div>
-
-<a ng-href="/">&larr; Back</a>
+<div class="modal-footer">
+    <button class="btn btn-default" ng-click="cancel()">Close</button>
+</div>
