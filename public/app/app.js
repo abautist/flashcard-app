@@ -1,4 +1,4 @@
-var app = angular.module("FlashcardApp", ["ngRoute", "FlashcardServices", "FlashcardCtrls", "ngLettering"]);
+var app = angular.module("FlashcardApp", ["ngRoute", "FlashcardServices", "FlashcardCtrls", "ngLettering", "smoothScroll"]);
 
 app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 	$routeProvider
