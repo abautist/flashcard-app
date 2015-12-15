@@ -1,5 +1,5 @@
 angular.module("FlashcardCtrls", ['FlashcardServices'])
-.controller("FlashcardCtrl", ['$scope', '$interval', '$modal', 'Flashcard', function($scope, $interval, $modal, Flashcard) {
+.controller("FlashcardCtrl", ['$scope', '$interval', '$modal', '$log', 'Flashcard', function($scope, $interval, $modal, $log, Flashcard) {
 	$scope.flashcards = [];
 	$scope.selectedIdx = null;
 	$scope.timer = null;
@@ -50,7 +50,14 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 					return idx;
 				}
 			}
-		});	
+		});
+
+		modalInstance.result.then(
+			function(selectedItem) {
+				$scope.selected = selectedItem;
+		}, function() {
+			$log.info('Modal dismissed at: ' + new Date());
+		});
 	}
 }])
 .controller('FlashcardNewCtrl', [
