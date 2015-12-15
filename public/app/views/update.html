@@ -6,22 +6,20 @@
 	<form ng-submit='putFlashcard()' data-foobar="{{flashcard.front}}">
 		<div class="form-group">
 			<div class="row">
-				{{ item.front }}
-				{{ item._id }}
 				<label>Front</label>
-				<input type="text" ng-model="front" class="form-control">
+				<input type="text" ng-model="front" class="form-control" placeholder="{{item.front}}" value="{{item.front}}">
 			</div>
 			<div class="row">
 				<label>Back</label>
-				<input type="text" ng-model="back" class="form-control">
+				<input type="text" ng-model="back" class="form-control" placeholder="{{item.back}}" value="{{item.back}}">
 			</div>
 			<div class="row">
 				<label>Image</label>
-				<input type="text" ng-model="image" class="form-control">
+				<input type="text" ng-model="image" class="form-control" placeholder="ex .jpeg, .png">
 			</div>
 			<div class="row">
 				<label>Category</label>
-				<input type="text" ng-model="category" class="form-control">
+				<input type="text" ng-model="category" class="form-control" placeholder="{{item.category}}" value="{{item.category}}">
 			</div>
 			<div class="row">
 				<button type="submit" class="btn btn-primary">Submit</button>

@@ -83,18 +83,17 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 }])
 .controller('FlashcardUpdateCtrl', [
 	'$scope',
-	'$location',
-	'$routeParams',
+	'$modalInstance',
 	'Flashcard',
 	"item",
-	function($scope, $location, $routeParams, Flashcard, item) {			
+	function($scope, $modalInstance, Flashcard, item) {			
 		console.log("********************");
 		console.log(item);
 		console.log("********************");
 
 		$scope.item = item;
 		console.log($scope.item._id);
-		
+
 		$scope.putFlashcard = function () {
 			var params = {
 				front: $scope.front,
@@ -102,9 +101,14 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 				image: $scope.image,
 				category: $scope.category
 			} 
+			console.log(params);
 			Flashcard.update({id: $scope.item._id}, params);
-			$location.path("/");
-		}	
+			$modalInstance.close();
+		}
+
+		$scope.cancel = function() {
+			$modalInstance.dismiss();
+		}			
 }])
 .controller("NavCtrl", ['$scope', 'Auth', function($scope, Auth) {
 	$scope.logout = function() {
