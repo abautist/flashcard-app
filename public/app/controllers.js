@@ -59,6 +59,19 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			$log.info('Modal dismissed at: ' + new Date());
 		});
 	}
+
+//dropdown menu 
+  $scope.status = {
+    isopen: false
+  };
+
+  $scope.toggleDropdown = function($event) {
+    $event.preventDefault();
+    $event.stopPropagation();
+    $scope.status.isopen = !$scope.status.isopen;
+  };
+
+  
 }])
 .controller('FlashcardNewCtrl', [
 	'$scope',
