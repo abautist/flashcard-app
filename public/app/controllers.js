@@ -78,14 +78,11 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
     $scope.status.isopen = !$scope.status.isopen;
   };
 
-
-
 }])
 .controller('FlashcardNewCtrl', [
 	'$scope',
-	'$location',
 	'Flashcard',
-	function($scope, $location, Flashcard) {
+	function($scope, Flashcard) {
 		$scope.createFlashcard = function() {
 			var params = {
 				front: $scope.front,
@@ -93,9 +90,9 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 				image: $scope.image,
 				category: $scope.category
 			}
+			console.log(params);
 			var newFlashcard = new Flashcard(params);
 			newFlashcard.$save();
-			$location.path("/");
 		}
 }])
 .controller('FlashcardDeleteCtrl', [

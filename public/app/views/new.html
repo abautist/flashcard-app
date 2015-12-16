@@ -1,14 +1,24 @@
-<h1>Create some flashcards, mate!</h1>
-<div class="well container">
-	<form ng-submit='createFlashcard()'>
+
+<div class="container create" ng-controller="FlashcardNewCtrl">
+	<h1>Add a new card here!</h1>
+	<form ng-submit="createFlashcard()">
 		<div class="form-group">
 			<div class="row">
-				<label>Front</label>
-				<input type="text" ng-model="front" class="form-control">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<label class="create-front">Front</label>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7">
+					<input type="text" ng-model="front" class="form-control">
+				</div>
 			</div>
+			<br />
 			<div class="row">
-				<label>Back</label>
-				<input type="text" ng-model="back" class="form-control">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<label>Back</label>
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+					<textarea rows="5" ng-model="back" class="form-control"></textarea>
+				</div>
 			</div>
 			<div class="row">
 				<label>Image</label>
@@ -18,10 +28,10 @@
 				<label>Category</label>
 				<input type="text" ng-model="category" class="form-control">
 			</div>
+			<br />
 			<div class="row">
-				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="submit" class="animated pulse infinite btn btn-primary">Create!</button>
 			</div>
+		</div>
 	</form>
 </div>
-
-<a ng-href="/">&larr; Back</a>

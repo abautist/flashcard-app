@@ -49,8 +49,8 @@ body {
     font-size: 25px;
     border-radius: 0px; }
 
-.section-2 {
-  text-align: center; }
+.section-2 div.create {
+  font-size: 16px; }
 
 .section-3 {
   height: 600px;
