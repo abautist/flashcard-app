@@ -81,9 +81,11 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 }])
 .controller('FlashcardNewCtrl', [
 	'$scope',
+	'$route',
 	'Flashcard',
-	function($scope, Flashcard) {
+	function($scope, $route, Flashcard) {
 		$scope.createFlashcard = function() {
+			
 			var params = {
 				front: $scope.front,
 				back: $scope.back,
@@ -93,6 +95,7 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			console.log(params);
 			var newFlashcard = new Flashcard(params);
 			newFlashcard.$save();
+			$route.reload();
 		}
 }])
 .controller('FlashcardDeleteCtrl', [
