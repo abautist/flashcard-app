@@ -71,7 +71,8 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
     $scope.status.isopen = !$scope.status.isopen;
   };
 
-  
+
+
 }])
 .controller('FlashcardNewCtrl', [
 	'$scope',
