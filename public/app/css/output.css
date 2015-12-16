@@ -9,34 +9,35 @@ body {
   border: none; }
 
 .section-1 {
+  background: url(../images/study2.jpeg) no-repeat;
+  background-size: 100% 100%;
+  border: 1px solid white;
   text-align: center;
   width: 100%;
   height: 800px; }
   .section-1 h1.title {
     font-family: "Crushed";
     font-size: 200px;
-    font-weight: 900; }
+    font-weight: 900;
+    color: white; }
     .section-1 h1.title .char3 {
       color: red;
       font-size: 250px; }
-    .section-1 h1.title .char5 {
-      color: white;
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .splash-cards {
   font-size: 80px; }
 
 .splash-card {
-  margin-left: 15%;
+  margin-left: 25%;
   background: transparent;
   list-style: none;
   visibility: hidden;
-  border: 1px solid black;
-  height: 150px;
-  width: 400px;
-  font-size: 20px; }
-  .splash-card p.splash-text {
-    margin-top: 5%; }
+  background-color: white;
+  height: 20%;
+  width: 80%;
+  font-size: 20px;
+  border-radius: 0;
+  box-shadow: 0 20px 12px -12px #323232; }
 
 .on {
   visibility: visible; }

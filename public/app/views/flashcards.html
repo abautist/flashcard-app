@@ -1,9 +1,10 @@
-<div class="section-1">
+<div class="section-1" id="splash-section">
 	<h1 class="title" data-lettering="letters">Retrieval</h1>
 	<div class="container-fluid">
 		<div class="row ani-container">
 			<div class="splash-cards col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<div class="well splash-card" ng-class="{on: $index === selectedIdx}" ng-repeat="card in flashcards | limitTo:3 track by $index">
+				<div class="well splash-card" ng-class="{on: $index === selectedIdx}" ng-repeat="card in flashcards | limitTo:2 track by $index">
+					<h3 class="card-header"> {{ card.category }} </h3>
 					<p class="splash-text">{{ card.front }}</p>
 				</div>
 			</div>
@@ -34,7 +35,6 @@
 	</div>
 
 	<div id="cards-section" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
-	{{category}}
 		<div class="well-container">
 			<div class="well">
 					<h4>{{ card.category }}</h4>
