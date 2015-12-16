@@ -20,6 +20,10 @@ body {
 		font-family: "Crushed";
 		font-size: 200px;
 		font-weight: 900;
+		.char3 {
+			color: red;
+			font-size: 250px;
+		}
 	}
 	span.btns {
 			margin: 5%;
@@ -29,8 +33,11 @@ body {
 			border-radius: 0px;
 		}
 	}
-	div.splash-card {
-		margin-top: 2%;
+	div.ani-container {
+		margin: 5%;
+		div.splash-card {
+
+		}
 	}
 
 }

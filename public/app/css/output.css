@@ -16,14 +16,17 @@ body {
     font-family: "Crushed";
     font-size: 200px;
     font-weight: 900; }
+    .section-1 h1.title .char3 {
+      color: red;
+      font-size: 250px; }
   .section-1 span.btns {
     margin: 5%; }
     .section-1 span.btns a.landing-pg-btns {
       padding: 15px 25px;
       font-size: 30px;
       border-radius: 0px; }
-  .section-1 div.splash-card {
-    margin-top: 2%; }
+  .section-1 div.ani-container {
+    margin: 5%; }
 
 .section-2 {
   text-align: center; }
