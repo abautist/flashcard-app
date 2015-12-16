@@ -1,9 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Crushed);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+body {
+  font-family: "Ubuntu";
+  height: 100%; }
+
+.navbar {
+  background-color: transparent;
+  border: none; }
+
 .section-1 {
-  height: 600px;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  height: 600px; }
+  .section-1 h1.title {
+    font-family: "Crushed";
+    font-size: 200px;
+    font-weight: 900; }
+  .section-1 span.btns {
+    margin: 5%; }
+    .section-1 span.btns a.landing-pg-btns {
+      padding: 15px 25px;
+      font-size: 30px;
+      border-radius: 0px; }
+  .section-1 div.splash-card {
+    margin-top: 2%; }
 
 .section-2 {
-  height: 600px;
   text-align: center; }
 
 .section-3 {

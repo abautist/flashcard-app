@@ -37,6 +37,8 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	start();
 
 	 $scope.showUpdate = function(idx) {
+	 	var selectedFlashcard = $scope.flashcards[idx];
+
 		var modalInstance = $modal.open({
 			templateUrl: "app/views/update.html",
 			controller: "FlashcardUpdateCtrl",
@@ -54,9 +56,14 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 
 		modalInstance.result.then(
 			function(selectedItem) {
-				$scope.selected = selectedItem;
+				console.log(selectedItem);
+
+				var updatedFlashcard = Flashcard.get({id: selectedFlashcard._id},function(){
+					$scope.flashcards[idx] = updatedFlashcard;
+				});
 		}, function() {
 			$log.info('Modal dismissed at: ' + new Date());
+			console.log("doesn't work");
 		});
 	}
 
