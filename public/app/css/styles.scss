@@ -15,7 +15,7 @@ body {
 .section-1 {
 	text-align: center;
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	h1.title {
 		font-family: "Crushed";
 		font-size: 200px;
@@ -24,22 +24,45 @@ body {
 			color: red;
 			font-size: 250px;
 		}
+		.char5 {
+			color: white;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
 	}
+}
+
+.splash-btns {
 	span.btns {
 			margin: 5%;
 		a.landing-pg-btns {
-			padding: 15px 25px;
-			font-size: 30px;
+			padding: 15px 40px;
+			font-size: 25px;
 			border-radius: 0px;
 		}
 	}
 	div.ani-container {
-		margin: 5%;
-		div.splash-card {
-
-		}
+		margin: 2%;
 	}
 
+}
+
+.splash-cards {
+	font-size: 80px;
+}
+
+.splash-card {
+  margin-left: 10%;
+  background:transparent;
+  list-style: none;
+  visibility: hidden;
+  border: 1px solid black;
+  height: 150px;
+  width: 400px;
+  font-size: 20px;
+}
+
+.on {
+  visibility: visible;
 }
 
 .section-2 {
@@ -49,15 +72,5 @@ body {
 .section-3 {
 	height: 600px;
 	text-align: center;
-}
-
-.splash-card {
-  background:transparent;
-  list-style:none;
-  visibility: hidden;
-}
-
-.on {
-  visibility: visible;
 }
 
