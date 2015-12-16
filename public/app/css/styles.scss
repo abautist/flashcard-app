@@ -31,6 +31,29 @@ body {
 	}
 }
 
+.splash-cards {
+	font-size: 80px;
+}
+
+.splash-card {
+  margin-left: 15%;
+  background:transparent;
+  list-style: none;
+  visibility: hidden;
+  border: 1px solid black;
+  height: 150px;
+  width: 400px;
+  font-size: 20px;
+  p.splash-text {
+  	margin-top: 5%;
+
+  }
+}
+
+.on {
+  visibility: visible;
+}
+
 .splash-btns {
 	span.btns {
 			margin: 5%;
@@ -40,29 +63,6 @@ body {
 			border-radius: 0px;
 		}
 	}
-	div.ani-container {
-		margin: 2%;
-	}
-
-}
-
-.splash-cards {
-	font-size: 80px;
-}
-
-.splash-card {
-  margin-left: 10%;
-  background:transparent;
-  list-style: none;
-  visibility: hidden;
-  border: 1px solid black;
-  height: 150px;
-  width: 400px;
-  font-size: 20px;
-}
-
-.on {
-  visibility: visible;
 }
 
 .section-2 {

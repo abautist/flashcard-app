@@ -23,20 +23,11 @@ body {
       color: white;
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
-.splash-btns span.btns {
-  margin: 5%; }
-  .splash-btns span.btns a.landing-pg-btns {
-    padding: 15px 40px;
-    font-size: 25px;
-    border-radius: 0px; }
-.splash-btns div.ani-container {
-  margin: 2%; }
-
 .splash-cards {
   font-size: 80px; }
 
 .splash-card {
-  margin-left: 10%;
+  margin-left: 15%;
   background: transparent;
   list-style: none;
   visibility: hidden;
@@ -44,9 +35,18 @@ body {
   height: 150px;
   width: 400px;
   font-size: 20px; }
+  .splash-card p.splash-text {
+    margin-top: 5%; }
 
 .on {
   visibility: visible; }
+
+.splash-btns span.btns {
+  margin: 5%; }
+  .splash-btns span.btns a.landing-pg-btns {
+    padding: 15px 40px;
+    font-size: 25px;
+    border-radius: 0px; }
 
 .section-2 {
   text-align: center; }

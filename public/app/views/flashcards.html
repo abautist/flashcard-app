@@ -4,7 +4,7 @@
 		<div class="row ani-container">
 			<div class="splash-cards col-xs-6 col-sm-6 col-md-6 col-lg-6">
 				<div class="well splash-card" ng-class="{on: $index === selectedIdx}" ng-repeat="card in flashcards | limitTo:3 track by $index">
-					{{ card.front }}
+					<p class="splash-text">{{ card.front }}</p>
 				</div>
 			</div>
 			<div class="splash-btns col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -27,13 +27,14 @@
 		</div>
 	<form>
     <label> Filter by Category: </label>
-    <select>
-      <option ng-repeat="card in flashcards | orderBy: 'category'" ng-model="category" value="{{ card.category }}">{{ card.category }}</option>
+    <select ng-model="category">
+      <option ng-repeat="card in flashcards | orderBy: 'category'" value="{{ card.category }}">{{ card.category }}</option>
     </select>
   </form>
 	</div>
 
 	<div id="cards-section" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
+	{{category}}
 		<div class="well-container">
 			<div class="well">
 					<h4>{{ card.category }}</h4>
