@@ -21,6 +21,51 @@ body {
     .navbar .navbar-nav > li > a:hover {
       color: #666666; }
 
+.login {
+  padding-top: 10%;
+  padding-bottom: 30%; }
+  .login legend {
+    font-size: 46px;
+    color: white; }
+  .login label {
+    font-size: 24px;
+    font-weight: 100;
+    color: white; }
+  .login .form-control {
+    background: transparent;
+    border-radius: 0;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    box-shadow: none;
+    outline: none; }
+  .login .btn-div {
+    margin-top: 5%;
+    text-align: center; }
+    .login .btn-div .btn {
+      padding: 9px 24px;
+      font-size: 24px;
+      color: #ccc;
+      border-radius: 0px;
+      border: 2px solid #ccc;
+      background: transparent; }
+      .login .btn-div .btn:hover {
+        background: #ccc;
+        color: black; }
+  .login .back-btn {
+    color: #ccc;
+    font-size: 18px; }
+  .login input::-webkit-input-placeholder {
+    color: #e5e5e5 !important; }
+  .login input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #e5e5e5 !important; }
+  .login input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #e5e5e5 !important; }
+  .login input:-ms-input-placeholder {
+    color: #e5e5e5 !important; }
+
 .section-1 {
   background: url(../images/study2.jpeg) no-repeat;
   z-index: 99;

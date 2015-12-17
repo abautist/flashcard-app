@@ -27,6 +27,67 @@ body {
 	}
 }
 
+.login {
+	padding-top: 10%;
+	padding-bottom: 30%;
+	legend {
+		font-size: 46px;
+		color: white;
+	}
+	label {
+		font-size: 24px;
+		font-weight: 100;
+		color: white;
+	}
+	.form-control {
+		background: transparent;
+		border-radius: 0;
+		color: white;
+		border: none;
+		border: 1px solid white;
+		box-shadow: none;
+		outline: none;
+	}
+	.btn-div {
+		margin-top: 5%;
+		text-align: center;
+		.btn {
+		padding: 9px 24px;
+		font-size: 24px;
+		color: #ccc;
+		border-radius: 0px;
+		border: 2px solid #ccc;
+		background: transparent;
+		&:hover {
+			background: #ccc;
+			color: black;
+			}
+		}	
+	}
+
+	.back-btn {
+		color: #ccc;
+		font-size: 18px;
+	}
+	
+
+	input::-webkit-input-placeholder {
+		color: #e5e5e5 !important;
+	}
+	 
+	input:-moz-placeholder { /* Firefox 18- */
+		color: #e5e5e5 !important;  
+	}
+	 
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: #e5e5e5 !important;  
+	}
+	 
+	input:-ms-input-placeholder {  
+		color: #e5e5e5 !important;  
+	}
+
+}
 
 .section-1 {
 	background: url(../images/study2.jpeg) no-repeat;
@@ -100,10 +161,8 @@ body {
 				width: 100px;
 				border-radius: 50%;
 			}
-		}
-		
+		}	
 	}
-
 }
 
 .section-3 {
