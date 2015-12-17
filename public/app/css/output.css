@@ -238,6 +238,13 @@ body {
     .section-3 .sec-3-cards .well-container .front {
       z-index: 2;
       transform: rotateY(0deg); }
+      .section-3 .sec-3-cards .well-container .front .card-hdr-front {
+        border-bottom: 2px solid #323232; }
+        .section-3 .sec-3-cards .well-container .front .card-hdr-front h4 {
+          font-size: 20px;
+          font-weight: 900; }
+      .section-3 .sec-3-cards .well-container .front .card-body-front {
+        padding-top: 3%; }
     .section-3 .sec-3-cards .well-container .back {
       transform: rotateY(180deg); }
     .section-3 .sec-3-cards .well-container .btn {

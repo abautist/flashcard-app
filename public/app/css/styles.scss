@@ -307,6 +307,17 @@ body {
 			.front {
 				z-index: 2;
 				transform: rotateY(0deg);
+				.card-hdr-front {
+					border-bottom: 2px solid #323232;
+					h4 {
+						font-size: 20px;
+						font-weight: 900;
+					}
+				}
+				.card-body-front {
+					padding-top: 3%;
+				}
+				
 			}
 
 			.back {

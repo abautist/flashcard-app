@@ -46,9 +46,9 @@
 		<div id="cards-section" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-repeat="card in flashcards | filter: category | filter: search">
 			<div class="flashcards well-container">
 				<div class="well">
-					<div class="front">
-						<h4>{{ card.category }}</h4>
-						<p>{{ card.front }}</p>
+					<div class="front col-xs-6 col-sm-6 col-md-6 col-lg-10">
+						<div class="card-hdr-front"><h4>{{ card.category }}</h4></div>
+						<div class="card-body-front">{{ card.front }}</div>
 					</div>
 					<div class="back">
 						<p>{{ card.back }}</p>
