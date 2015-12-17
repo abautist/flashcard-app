@@ -115,9 +115,6 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'Flashcard',
 	"item",
 	function($scope, $modalInstance, Flashcard, item) {			
-		console.log("********************");
-		console.log(item);
-		console.log("********************");
 
 		$scope.item = item;
 		console.log($scope.item._id);
@@ -138,9 +135,10 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			$modalInstance.dismiss();
 		}			
 }])
-.controller("NavCtrl", ['$scope', 'Auth', function($scope, Auth) {
+.controller("NavCtrl", ['$scope', '$window', 'Auth', function($scope, $window, Auth) {
 	$scope.logout = function() {
 		Auth.removeToken();
+		$window.location.reload();
 	};
 }])
 .controller("LoginCtrl", [
