@@ -106,13 +106,17 @@ body {
   visibility: visible; }
 
 .splash-btns .splash-content {
-  margin: -4% 5% 5% 5%;
-  color: white;
+  margin: -8% 8% 8% 5%;
+  color: #ccc;
   font-size: 20px; }
+.splash-btns .author {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 2%; }
 .splash-btns span.btns {
   margin: 5%; }
   .splash-btns span.btns a.landing-pg-btns {
-    padding: 15px 40px;
+    padding: 11px 30px;
     font-size: 25px;
     color: #ccc;
     border-radius: 0px;
@@ -178,9 +182,46 @@ body {
           color: black; }
 
 .section-3 {
-  height: 600px;
-  text-align: center; }
-  .section-3 .category-filter {
-    margin-top: 10%; }
+  height: 700px; }
+  .section-3 h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100px;
+    color: white;
+    margin-bottom: 3%; }
+  .section-3 .section-3-filters label {
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+    margin-left: 20%; }
+  .section-3 .section-3-filters .form-control {
+    background: transparent;
+    border-radius: 0;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    box-shadow: none;
+    outline: none; }
+  .section-3 .section-3-filters input::-webkit-input-placeholder {
+    color: #e5e5e5 !important; }
+  .section-3 .section-3-filters textarea::-webkit-input-placeholder {
+    color: #e5e5e5 !important; }
+  .section-3 .section-3-filters input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #e5e5e5 !important; }
+  .section-3 .section-3-filters input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #e5e5e5 !important; }
+  .section-3 .section-3-filters input:-ms-input-placeholder {
+    color: #e5e5e5 !important; }
+  .section-3 .section-3-filters .category-filter {
+    text-align: center;
+    margin-bottom: 3%; }
+    .section-3 .section-3-filters .category-filter select {
+      margin-left: 2%;
+      width: 30%;
+      -webkit-appearance: value;
+      -moz-appearance: value;
+      appearance: value; }
 
 /*# sourceMappingURL=output.css.map */

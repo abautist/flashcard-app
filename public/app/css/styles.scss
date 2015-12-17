@@ -134,14 +134,19 @@ body {
 
 .splash-btns {
 	.splash-content {
-		margin: -4% 5% 5% 5%;
-		color: white;
+		margin: -8% 8% 8% 5%;
+		color: #ccc;
 		font-size: 20px;
+	}
+	.author {
+		font-size: 16px;
+		color: #ccc;
+		margin-bottom: 2%;
 	}
 	span.btns {
 		margin: 5%;
 		a.landing-pg-btns {
-			padding: 15px 40px;
+			padding: 11px 30px;
 			font-size: 25px;
 			color: #ccc;
 			border-radius: 0px;
@@ -227,10 +232,63 @@ body {
 }
 
 .section-3 {
-	height: 600px;
-	text-align: center;
-	.category-filter {
-		margin-top: 10%;
+	height: 700px;
+	h2 {
+		text-align: center;
+		font-size: 36px;
+		font-weight: 100px;
+		color: white;
+		margin-bottom: 3%;
 	}
+	.section-3-filters {
+		label {
+			font-size: 24px;
+			font-weight: 100;
+			color: white;
+			margin-left: 20%;
+		}
+		.form-control {
+			background: transparent;
+			border-radius: 0;
+			color: white;
+			border: none;
+			border: 1px solid white;
+			box-shadow: none;
+			outline: none;
+		}
+		input::-webkit-input-placeholder {
+			color: #e5e5e5 !important;
+		}
+
+		textarea::-webkit-input-placeholder {
+			color: #e5e5e5 !important;
+		}
+		 
+		input:-moz-placeholder { /* Firefox 18- */
+			color: #e5e5e5 !important;  
+		}
+		 
+		input::-moz-placeholder {  /* Firefox 19+ */
+			color: #e5e5e5 !important;  
+		}
+		 
+		input:-ms-input-placeholder {  
+			color: #e5e5e5 !important;  
+		}
+		.category-filter {
+			text-align: center;
+			margin-bottom: 3%;
+			select {
+				margin-left: 2%;
+				width: 30%;
+			   -webkit-appearance: value;
+			   -moz-appearance: value;
+			   appearance: value;
+			}
+		}
+	}
+	.sec-3-cards {
+	}
+		
 }
 

@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="splash-btns col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<p class="splash-content">A simple web application to create and use online flashcards for educational purposes.</p>
+				<p class="splash-content">A simple web application to create and use flashcards.</p>
 				<span class="btns"><a href="#" scroll-to="create-section" class="landing-pg-btns btn btn-default btn-lg">Create</a></span>
 				<span class="btns"><a href="#" scroll-to="search-section" class=" landing-pg-btns btn btn-primary btn-lg">Search</a></span>
 			</div>
@@ -23,31 +23,36 @@
 </div>
 
 <div class="section-3" id="search-section">
-	<h2>Search Decks and Find your Study Topic</h2>
-	<div class="section-3-hdr col-xs-6 col-sm-6 col-md-6 col-lg-8">
-		<div class="row search-row col-xs-6 col-sm-6 col-md-6 col-lg-10">
-			<input type="text" class="form-control" placeholder="Ex. Javascript" ng-model="search">
+	<h2>Search Flashcards and Filter by Study Topic</h2>
+	<div class="section-3-filters">	
+		<div class="section-3-hdr col-xs-6 col-sm-6 col-md-6 col-lg-8">
+			<div class="row search-row col-xs-6 col-sm-6 col-md-6 col-lg-2">
+				<label>Search:</label>
+			</div>
+			<div class="row col-xs-6 col-sm-6 col-md-6 col-lg-10">
+				<input type="text" class="form-control" placeholder="Ex. Javascript" ng-model="search">
+			</div>
 		</div>
 		<div class="row category-filter search-row col-xs-6 col-sm-6 col-md-6 col-lg-4">
 			<form>
-		    <label> Filter by Category: </label>
+		    <label>Filter by Category: </label>
 		    <select ng-model="category">
 		      <option ng-repeat="option in myOptions" value="{{ option.category }}">{{ option.category }}</option>
 		    </select>
 		  </form>
 	 </div>
-  </div>
-	
-
-	<div id="cards-section" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-repeat="card in flashcards | filter: category | filter: search">
-		<div class="well-container">
-			<div class="well">
-					<h4>{{ card.category }}</h4>
-					<p>{{ card.front }}</p>
-					<p>{{ card.back }}</p>
-					<br />
-					<a ng-href="/flashcards/delete/{{ card._id }}" class="btn btn-danger btn-lg">Delete</a>
-					<a ng-click="showUpdate($index)" class="btn btn-primary btn-lg pull-right">Update</a>
+	</div>
+	<div class="sec-3-cards">
+		<div id="cards-section" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-repeat="card in flashcards | filter: category | filter: search">
+			<div class="well-container">
+				<div class="well">
+						<h4>{{ card.category }}</h4>
+						<p>{{ card.front }}</p>
+						<p>{{ card.back }}</p>
+						<br />
+						<a ng-href="/flashcards/delete/{{ card._id }}" class="btn btn-danger btn-lg">Delete</a>
+						<a ng-click="showUpdate($index)" class="btn btn-primary btn-lg pull-right">Update</a>
+				</div>
 			</div>
 		</div>
 	</div>
