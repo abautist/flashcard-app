@@ -5,7 +5,8 @@ body {
   height: 100%;
   background: #114357;
   background: -webkit-linear-gradient(to bottom, #114357, #F29492);
-  background: linear-gradient(to bottom, #114357, #F29492); }
+  background: linear-gradient(to bottom, #114357, #F29492);
+  background-repeat: no-repeat; }
 
 .navbar {
   background-color: transparent;
