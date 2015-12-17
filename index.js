@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var port = 3000;
+var port = process.env.PORT || 3000;
 var expressJWT = require("express-jwt");
 var jwt = require("jsonwebtoken");
 var app = express();
