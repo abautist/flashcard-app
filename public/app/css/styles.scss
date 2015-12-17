@@ -289,11 +289,12 @@ body {
 	.sec-3-cards {
 		.well-container {
 			box-shadow: 0 20px 12px -12px #323232;
+			perspective: 1000;
 			&:hover .well {
 				transform: rotateY(180deg);
 				}
 			.well {
-				transition: 0.6s;
+				transition: .8s;
 				transform-style: preserve-3d;
 				height: 240px;
 			}
@@ -302,6 +303,8 @@ body {
 				-webkit-backface-visibility: hidden;
 				backface-visibility: hidden;
 				position: absolute;
+				width: 90%;
+				height: 90%;
 			}
 
 			.front {
@@ -322,12 +325,31 @@ body {
 
 			.back {
 				transform: rotateY(180deg);
+				margin-top: 2%;
+				.back-content {
+					height: 65%;
+				}
+				.back-btns {
+					top: 90%;
+					.trash-btn {
+						color: #ccc;
+						border-radius: 0px;
+						border: 1px solid #ccc;
+						background: transparent;
+						&:hover {
+							background: #cc0000;
+							color: #660000;
+							border: none;
+						}
+					}
+				}
 			}
-			
+
 			.btn {
+				font-size: 16px;
 				color: #ccc;
 				border-radius: 0px;
-				border: 2px solid #ccc;
+				border: 1px solid #ccc;
 				background: transparent;
 				&:hover {
 					background: #ccc;
@@ -352,7 +374,6 @@ body {
 			cursor: pointer;
 		}
 	} 
-
 }
 
 .modal-body {

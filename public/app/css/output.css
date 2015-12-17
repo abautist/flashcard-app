@@ -223,18 +223,21 @@ body {
       -moz-appearance: value;
       appearance: value; }
   .section-3 .sec-3-cards .well-container {
-    box-shadow: 0 20px 12px -12px #323232; }
+    box-shadow: 0 20px 12px -12px #323232;
+    perspective: 1000; }
     .section-3 .sec-3-cards .well-container:hover .well {
       transform: rotateY(180deg); }
     .section-3 .sec-3-cards .well-container .well {
-      transition: 0.6s;
+      transition: .8s;
       transform-style: preserve-3d;
       height: 240px; }
     .section-3 .sec-3-cards .well-container .front,
     .section-3 .sec-3-cards .well-container .back {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      position: absolute; }
+      position: absolute;
+      width: 90%;
+      height: 90%; }
     .section-3 .sec-3-cards .well-container .front {
       z-index: 2;
       transform: rotateY(0deg); }
@@ -246,11 +249,26 @@ body {
       .section-3 .sec-3-cards .well-container .front .card-body-front {
         padding-top: 3%; }
     .section-3 .sec-3-cards .well-container .back {
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      margin-top: 2%; }
+      .section-3 .sec-3-cards .well-container .back .back-content {
+        height: 65%; }
+      .section-3 .sec-3-cards .well-container .back .back-btns {
+        top: 90%; }
+        .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn {
+          color: #ccc;
+          border-radius: 0px;
+          border: 1px solid #ccc;
+          background: transparent; }
+          .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn:hover {
+            background: #cc0000;
+            color: #660000;
+            border: none; }
     .section-3 .sec-3-cards .well-container .btn {
+      font-size: 16px;
       color: #ccc;
       border-radius: 0px;
-      border: 2px solid #ccc;
+      border: 1px solid #ccc;
       background: transparent; }
       .section-3 .sec-3-cards .well-container .btn:hover {
         background: #ccc;
