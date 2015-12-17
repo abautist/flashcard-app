@@ -223,5 +223,31 @@ body {
       -webkit-appearance: value;
       -moz-appearance: value;
       appearance: value; }
+  .section-3 .sec-3-cards .well-container {
+    box-shadow: 0 20px 12px -12px #323232; }
+    .section-3 .sec-3-cards .well-container:hover .well {
+      transform: rotateY(180deg); }
+    .section-3 .sec-3-cards .well-container .well {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      height: 240px; }
+    .section-3 .sec-3-cards .well-container .front,
+    .section-3 .sec-3-cards .well-container .back {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute; }
+    .section-3 .sec-3-cards .well-container .front {
+      z-index: 2;
+      transform: rotateY(0deg); }
+    .section-3 .sec-3-cards .well-container .back {
+      transform: rotateY(180deg); }
+    .section-3 .sec-3-cards .well-container .btn {
+      color: #ccc;
+      border-radius: 0px;
+      border: 2px solid #ccc;
+      background: transparent; }
+      .section-3 .sec-3-cards .well-container .btn:hover {
+        background: #ccc;
+        color: black; }
 
 /*# sourceMappingURL=output.css.map */

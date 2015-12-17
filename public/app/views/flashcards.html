@@ -44,14 +44,18 @@
 	</div>
 	<div class="sec-3-cards">
 		<div id="cards-section" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-repeat="card in flashcards | filter: category | filter: search">
-			<div class="well-container">
+			<div class="flashcards well-container">
 				<div class="well">
+					<div class="front">
 						<h4>{{ card.category }}</h4>
 						<p>{{ card.front }}</p>
+					</div>
+					<div class="back">
 						<p>{{ card.back }}</p>
 						<br />
-						<a ng-href="/flashcards/delete/{{ card._id }}" class="btn btn-danger btn-lg">Delete</a>
+						<a ng-href="/flashcards/delete/{{ card._id }}" class="btn btn-danger btn-lg"><i class="fa fa-trash-o fa-lg"></i></a>
 						<a ng-click="showUpdate($index)" class="btn btn-primary btn-lg pull-right">Update</a>
+					</div>
 				</div>
 			</div>
 		</div>
