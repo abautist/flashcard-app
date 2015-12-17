@@ -6,7 +6,7 @@ var expressJWT = require("express-jwt");
 var jwt = require("jsonwebtoken");
 var app = express();
 
-var secret = "secretpasswordmate";
+var secret = process.env.SALT;
 
 var Flashcard = require("./models/flashcard");
 
