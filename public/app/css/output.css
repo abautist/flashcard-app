@@ -105,6 +105,10 @@ body {
 .on {
   visibility: visible; }
 
+.splash-btns .splash-content {
+  margin: -4% 5% 5% 5%;
+  color: white;
+  font-size: 20px; }
 .splash-btns span.btns {
   margin: 5%; }
   .splash-btns span.btns a.landing-pg-btns {

@@ -133,8 +133,13 @@ body {
 }
 
 .splash-btns {
+	.splash-content {
+		margin: -4% 5% 5% 5%;
+		color: white;
+		font-size: 20px;
+	}
 	span.btns {
-			margin: 5%;
+		margin: 5%;
 		a.landing-pg-btns {
 			padding: 15px 40px;
 			font-size: 25px;
