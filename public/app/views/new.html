@@ -1,32 +1,34 @@
 
 <div class="container create" ng-controller="FlashcardNewCtrl">
-	<h1>Add a new card here!</h1>
+	<div class="create-hdr">Add a new card here!</div>
+	<p class="form-group col-xs-8 col-sm-8 col-md-8 col-lg-8">Exercise your brain and level up on your studying in an organized fashion. Add flashcards to improve your ability to retain core concepts.</p>
+	<br />
 	<form ng-submit="createFlashcard()">
-		<div class="form-group col-xs-8 col-sm-8 col-md-10 col-lg-10">
+		<div class="form-group col-xs-8 col-sm-8 col-md-10 col-lg-9">
 			<div class="row">
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 					<label class="create-front">Front</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-9">
-					<input type="text" ng-model="front" class="form-control">
-				</div>
-			</div>
-			<br />
-			<div class="row">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-">
-					<label>Back</label>
-				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-9">
-					<textarea rows="5" ng-model="back" class="form-control"></textarea>
+				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+					<input type="text" ng-model="front" class="form-control" placeholder="ex. What is Javascript?">
 				</div>
 			</div>
 			<br />
 			<div class="row">
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-					<label>Image</label>
+					<label>Back</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-9">
-					<input type="text" ng-model="image" class="form-control">
+				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+					<textarea rows="5" ng-model="back" class="form-control" placeholder="Javascript is a high-level, dynamic, untyped, and interpreted programming language."></textarea>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<label>Image Link</label>
+				</div>
+				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+					<input type="text" ng-model="image" class="form-control" placeholder="ex. jpeg">
 				</div>
 			</div>
 			<br />
@@ -34,10 +36,13 @@
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 					<label>Category</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-9">
-					<input type="text" ng-model="category" class="form-control">
+				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+					<input type="text" ng-model="category" class="form-control" placeholder="Javascript">
 				</div>
 			</div>
+			<br />
+			<br />
+			<p><em style="color:#ccc">Note: You must be logged in to create a card.</em></p>
 		</div>
 		<div class="form-btn col-xs-4 col-sm-4 col-md-2 col-lg-2">
 			<button type="submit" class="create-form-btn animated pulse infinite btn btn-primary">Create!</button>

@@ -16,13 +16,16 @@ body {
 	.navbar-brand {
 		color: white;
 		font-size: 24px;
+		&:hover {
+			color: #19ff19;
+		}
 	}
 	.navbar-nav > li > a {
 		color: #e0e0e0;
 		font-size: 20px;
 		font-weight: 100;
 		&:hover {
-			color: #666666;
+			color: #7f7f7f;
 		}
 	}
 }
@@ -54,7 +57,7 @@ body {
 		.btn {
 		padding: 9px 24px;
 		font-size: 24px;
-		color: #ccc;
+		color: white;
 		border-radius: 0px;
 		border: 2px solid #ccc;
 		background: transparent;
@@ -64,13 +67,13 @@ body {
 			}
 		}	
 	}
-
 	.back-btn {
-		color: #ccc;
+		color: white;
 		font-size: 18px;
-	}
-	
-
+		&:hover {
+			color: #333333;
+		}
+	}	
 	input::-webkit-input-placeholder {
 		color: #e5e5e5 !important;
 	}
@@ -86,7 +89,6 @@ body {
 	input:-ms-input-placeholder {  
 		color: #e5e5e5 !important;  
 	}
-
 }
 
 .section-1 {
@@ -151,22 +153,79 @@ body {
 .section-2 {
 	height: 700px;
 	div.create {
-		padding-top: 8%;
+		padding-top: 5%;
 		font-size: 16px;
+		.create-hdr {
+			font-size: 36px;
+			font-weight: 100px;
+			border-bottom: 1px solid white;
+			color: white;
+			margin-bottom: 2%;
+		}
+		p { 
+			color: white;
+			font-weight: 100;
+			font-size: 16px;
+			margin-bottom: 3%;
+		}
+		label {
+			font-size: 16px;
+			font-weight: 100;
+			color: white;
+		}
+		.form-control {
+			background: transparent;
+			border-radius: 0;
+			color: white;
+			border: none;
+			border: 1px solid white;
+			box-shadow: none;
+			outline: none;
+		}
+		input::-webkit-input-placeholder {
+			color: #e5e5e5 !important;
+		}
+
+		textarea::-webkit-input-placeholder {
+			color: #e5e5e5 !important;
+		}
+		 
+		input:-moz-placeholder { /* Firefox 18- */
+			color: #e5e5e5 !important;  
+		}
+		 
+		input::-moz-placeholder {  /* Firefox 19+ */
+			color: #e5e5e5 !important;  
+		}
+		 
+		input:-ms-input-placeholder {  
+			color: #e5e5e5 !important;  
+		}
 		.form-btn {
 			text-align: center;
-			margin-top: 5%;
+			margin-top: 3%;
 			button.create-form-btn {
-				height: 100px;
-				width: 100px;
+				height: 180px;
+				width: 180px;
 				border-radius: 50%;
+				font-size: 24px;
+				color: white;
+				border: 2px solid #ccc;
+				background: transparent;
+				&:hover {
+					background: #ccc;
+					color: black;
+				}
 			}
-		}	
+		}		
 	}
 }
 
 .section-3 {
 	height: 600px;
 	text-align: center;
+	.category-filter {
+		margin-top: 10%;
+	}
 }
 

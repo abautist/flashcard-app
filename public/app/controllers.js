@@ -3,13 +3,38 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	$scope.flashcards = [];
 	$scope.selectedIdx = null;
 	$scope.timer = null;
+	$scope.filteredArray = [];
+
 
 	Flashcard.query(function success(data) {
 		var shuffleData = shuffle(data);	
 			$scope.flashcards = shuffleData;
+			$scope.myOptions = removeDuplicates($scope.flashcards, "category");
 	}, function error(data) {
 		console.log(data);
 	});
+
+
+	var removeDuplicates = function (arr, key) {
+		var unique = [],
+        blocked = [];
+    
+    unique.push(arr[0]);
+    blocked.push(arr[0][key]);
+    
+    for (var i = 1; i < arr.length; i++) {
+        if (blocked.indexOf(arr[i][key]) <= -1) {
+            unique.push(arr[i]);
+            blocked.push(arr[i][key]);
+        }
+    }  
+    return unique; 
+	}
+
+
+     
+
+
 
 	// -> Fisher–Yates shuffle algorithm
 	function shuffle(arr) {

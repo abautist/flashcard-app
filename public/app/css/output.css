@@ -14,12 +14,14 @@ body {
   .navbar .navbar-brand {
     color: white;
     font-size: 24px; }
+    .navbar .navbar-brand:hover {
+      color: #19ff19; }
   .navbar .navbar-nav > li > a {
     color: #e0e0e0;
     font-size: 20px;
     font-weight: 100; }
     .navbar .navbar-nav > li > a:hover {
-      color: #666666; }
+      color: #7f7f7f; }
 
 .login {
   padding-top: 10%;
@@ -45,7 +47,7 @@ body {
     .login .btn-div .btn {
       padding: 9px 24px;
       font-size: 24px;
-      color: #ccc;
+      color: white;
       border-radius: 0px;
       border: 2px solid #ccc;
       background: transparent; }
@@ -53,8 +55,10 @@ body {
         background: #ccc;
         color: black; }
   .login .back-btn {
-    color: #ccc;
+    color: white;
     font-size: 18px; }
+    .login .back-btn:hover {
+      color: #333333; }
   .login input::-webkit-input-placeholder {
     color: #e5e5e5 !important; }
   .login input:-moz-placeholder {
@@ -117,18 +121,62 @@ body {
 .section-2 {
   height: 700px; }
   .section-2 div.create {
-    padding-top: 8%;
+    padding-top: 5%;
     font-size: 16px; }
+    .section-2 div.create .create-hdr {
+      font-size: 36px;
+      font-weight: 100px;
+      border-bottom: 1px solid white;
+      color: white;
+      margin-bottom: 2%; }
+    .section-2 div.create p {
+      color: white;
+      font-weight: 100;
+      font-size: 16px;
+      margin-bottom: 3%; }
+    .section-2 div.create label {
+      font-size: 16px;
+      font-weight: 100;
+      color: white; }
+    .section-2 div.create .form-control {
+      background: transparent;
+      border-radius: 0;
+      color: white;
+      border: none;
+      border: 1px solid white;
+      box-shadow: none;
+      outline: none; }
+    .section-2 div.create input::-webkit-input-placeholder {
+      color: #e5e5e5 !important; }
+    .section-2 div.create textarea::-webkit-input-placeholder {
+      color: #e5e5e5 !important; }
+    .section-2 div.create input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #e5e5e5 !important; }
+    .section-2 div.create input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #e5e5e5 !important; }
+    .section-2 div.create input:-ms-input-placeholder {
+      color: #e5e5e5 !important; }
     .section-2 div.create .form-btn {
       text-align: center;
-      margin-top: 5%; }
+      margin-top: 3%; }
       .section-2 div.create .form-btn button.create-form-btn {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%; }
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        font-size: 24px;
+        color: white;
+        border: 2px solid #ccc;
+        background: transparent; }
+        .section-2 div.create .form-btn button.create-form-btn:hover {
+          background: #ccc;
+          color: black; }
 
 .section-3 {
   height: 600px;
   text-align: center; }
+  .section-3 .category-filter {
+    margin-top: 10%; }
 
 /*# sourceMappingURL=output.css.map */
