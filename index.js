@@ -12,7 +12,7 @@ var Flashcard = require("./models/flashcard");
 
 var mongoose = require("mongoose");
 var User = require("./models/user");
-mongoose.connect("mongodb://localhost/flashcard");
+mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/flashcard");
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());

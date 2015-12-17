@@ -1,9 +1,9 @@
 angular.module("FlashcardServices", ["ngResource"])
 .factory("Flashcard", ["$resource", function($resource) {
-	return $resource("http://localhost:3000/api/flashcards/:id");
+	return $resource("/api/flashcards/:id");
 }])
 .factory("Flashcard", ["$resource", function($resource) {
-	return $resource("http://localhost:3000/api/flashcards/:id", null,
+	return $resource("/api/flashcards/:id", null,
 	{
 		"update": { 
 			method: "PUT",

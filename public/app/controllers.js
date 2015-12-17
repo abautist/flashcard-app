@@ -170,8 +170,9 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'$scope',
 	'$http',
 	'$location',
+	'$window',
 	'Auth',
-	function($scope, $http, $location, Auth) {
+	function($scope, $http, $location, $window, Auth) {
 		$scope.user = {
 			email: "",
 			password: ""
@@ -179,8 +180,13 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 		$scope.actionName = "Login";
 		$scope.userAction = function() {
 			$http.post("/api/auth", $scope.user).then(function success(res) {
+				if(res.data.token) {	
 					Auth.saveToken(res.data.token);
-					$location.path("/");
+					$route.reload();
+				} else {
+					console.log('Auth failed');
+					$window.location.reload();
+				}
 			}, function error(res) {
 					console.log(res.data);
 			});
