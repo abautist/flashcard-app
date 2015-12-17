@@ -182,7 +182,7 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			$http.post("/api/auth", $scope.user).then(function success(res) {
 				if(res.data.token) {	
 					Auth.saveToken(res.data.token);
-					$route.reload();
+					$location.path("/");
 				} else {
 					console.log('Auth failed');
 					$window.location.reload();
