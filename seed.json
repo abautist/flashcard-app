@@ -1,0 +1,5 @@
+{
+	"undefined": "mongodb://localhost/flashcards",
+	"dev": "mongodb://localhost/flashcards",
+	"prod": "mongodb://localhost/flashcards"
+}
