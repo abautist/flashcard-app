@@ -251,7 +251,6 @@ body {
 			background: transparent;
 			border-radius: 0;
 			color: white;
-			border: none;
 			border: 1px solid white;
 			box-shadow: none;
 			outline: none;
@@ -324,9 +323,75 @@ body {
 					color: black;
 				}
 			}
-		}
-		
-	}
-		
+		}	
+	}		
 }
 
+.modal-header {
+	color: white;
+	font-size: 36px;
+	background: #232526;
+	background: -webkit-linear-gradient(to left, #232526 , #414345);
+	background: linear-gradient(to left, #232526 , #414345);
+	.modal-btn {
+		font-size: 16px;
+		color: #ccc;
+		&:hover {
+			color: white;
+			cursor: pointer;
+		}
+	} 
+
+}
+
+.modal-body {
+	label {
+		font-size: 18px;
+		font-weight: 100;
+		color: white;
+	}
+	.form-control {
+		background: transparent;
+		border-radius: 0;
+		color: white;
+		border: 1px solid white;
+		box-shadow: none;
+		outline: none;
+	}
+	input::-webkit-input-placeholder {
+		color: #e5e5e5 !important;
+	}
+
+	textarea::-webkit-input-placeholder {
+		color: #e5e5e5 !important;
+	}
+	 
+	input:-moz-placeholder { /* Firefox 18- */
+		color: #e5e5e5 !important;  
+	}
+	 
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: #e5e5e5 !important;  
+	}
+	 
+	input:-ms-input-placeholder {  
+		color: #e5e5e5 !important;  
+	}
+	.btn {
+		color: #ccc;
+		border-radius: 0px;
+		border: 2px solid #ccc;
+		background: transparent;
+		&:hover {
+			background: #ccc;
+			color: black;
+		}
+	}
+
+}
+
+.modal-footer {
+	background: #232526;
+	background: -webkit-linear-gradient(to left, #232526 , #414345);
+	background: linear-gradient(to left, #232526 , #414345);  
+}

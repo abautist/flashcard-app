@@ -142,7 +142,6 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	function($scope, $modalInstance, Flashcard, item) {			
 
 		$scope.item = item;
-		console.log($scope.item._id);
 
 		$scope.putFlashcard = function () {
 			var params = {

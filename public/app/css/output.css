@@ -198,7 +198,6 @@ body {
     background: transparent;
     border-radius: 0;
     color: white;
-    border: none;
     border: 1px solid white;
     box-shadow: none;
     outline: none; }
@@ -249,5 +248,55 @@ body {
       .section-3 .sec-3-cards .well-container .btn:hover {
         background: #ccc;
         color: black; }
+
+.modal-header {
+  color: white;
+  font-size: 36px;
+  background: #232526;
+  background: -webkit-linear-gradient(to left, #232526, #414345);
+  background: linear-gradient(to left, #232526, #414345); }
+  .modal-header .modal-btn {
+    font-size: 16px;
+    color: #ccc; }
+    .modal-header .modal-btn:hover {
+      color: white;
+      cursor: pointer; }
+
+.modal-body label {
+  font-size: 18px;
+  font-weight: 100;
+  color: white; }
+.modal-body .form-control {
+  background: transparent;
+  border-radius: 0;
+  color: white;
+  border: 1px solid white;
+  box-shadow: none;
+  outline: none; }
+.modal-body input::-webkit-input-placeholder {
+  color: #e5e5e5 !important; }
+.modal-body textarea::-webkit-input-placeholder {
+  color: #e5e5e5 !important; }
+.modal-body input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #e5e5e5 !important; }
+.modal-body input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #e5e5e5 !important; }
+.modal-body input:-ms-input-placeholder {
+  color: #e5e5e5 !important; }
+.modal-body .btn {
+  color: #ccc;
+  border-radius: 0px;
+  border: 2px solid #ccc;
+  background: transparent; }
+  .modal-body .btn:hover {
+    background: #ccc;
+    color: black; }
+
+.modal-footer {
+  background: #232526;
+  background: -webkit-linear-gradient(to left, #232526, #414345);
+  background: linear-gradient(to left, #232526, #414345); }
 
 /*# sourceMappingURL=output.css.map */
