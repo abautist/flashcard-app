@@ -14,7 +14,6 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 		console.log(data);
 	});
 
-
 	var removeDuplicates = function (arr, key) {
 		var unique = [],
         blocked = [];
@@ -30,11 +29,6 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
     }  
     return unique; 
 	}
-
-
-     
-
-
 
 	// -> Fisher–Yates shuffle algorithm
 	function shuffle(arr) {
