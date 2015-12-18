@@ -41,7 +41,7 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 
 ### Known Issues / Features to be Added
 * Mobile design
-* Add relationships between created cards and CurrentUser
+* Add relationships/restrictions between created cards and CurrentUser
 
 
 
