@@ -1,5 +1,5 @@
 # Retrieval
-## A simple MEAN stack web application to create and use flashcards.
+A simple MEAN stack web application to create and use flashcards.
 
 Retrieval was created as a full-stack project for General Assembly Seattle's Web Development Immersive. Too often are we utilizing ineffective study techniques to prepare for an interview or exam. We try to read and re-read material, cramming in as much information as we can. Study approaches such as cramming is ineffectual if long-term retention is your goal. 
 
@@ -30,6 +30,9 @@ Active retrieval usings tools like flashcards makes learning stick and will have
 * node-mongo-seeds
 
 ### Approach Taken
+
+![Retrieval Screenshot 1](https://github.com/abautist/webstore/blob/master/static/images/Screenshots/landingpage.png "JF Screenshot 1")
+
 
 ### Known Issues
 
