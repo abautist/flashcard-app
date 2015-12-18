@@ -105,6 +105,8 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'Flashcard',
 	function($scope, $route, $window, Flashcard) {
 
+		$scope.cardCreated = false;
+
 		$scope.createFlashcard = function() {
 			
 			var params = {
@@ -168,6 +170,9 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'$window',
 	'Auth',
 	function($scope, $http, $location, $window, Auth) {
+		
+		$scope.authFail = false;
+
 		$scope.user = {
 			email: "",
 			password: ""
@@ -180,7 +185,9 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 					$location.path("/");
 				} else {
 					console.log('Auth failed');
-					$window.location.reload();
+					$scope.authFail = true;
+					$scope.user.email = "";
+					$scope.user.password = "";
 				}
 			}, function error(res) {
 					console.log(res.data);
@@ -193,6 +200,9 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'$location',
 	'Auth',
 	function($scope, $http, $location, Auth) {
+		
+		$scope.authFail = false;	
+			
 		$scope.user = {
 			email: "",
 			password: ""
@@ -204,10 +214,13 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 						Auth.saveToken(res.data.token);
 						$location.path("/");
 				}, function error(res) {
-						console.log(res.data);
+						console.log(res.data);	
 				});
 			}, function error (res) {
-						console.log(res.data);
+					console.log(res.data);
+					$scope.authFail = true;
+					$scope.user.email = "";
+					$scope.user.password = "";
 			});
 		}
 }]);
