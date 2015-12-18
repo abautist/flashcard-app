@@ -157,6 +157,9 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			$modalInstance.dismiss();
 		}			
 }])
+.controller("AboutCtrl", ['$scope', function($scope) {
+	
+}])
 .controller("NavCtrl", ['$scope', '$window', 'Auth', function($scope, $window, Auth) {
 	$scope.logout = function() {
 		Auth.removeToken();

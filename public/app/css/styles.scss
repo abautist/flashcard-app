@@ -30,6 +30,25 @@ body {
 	}
 }
 
+.about {
+	height: 100%;
+	color: white;
+	padding-bottom: 100%;
+	.photo {
+		padding-top: 2%;
+	}
+	.content {
+		margin-top: 2%;
+		font-size: 18px;
+		text-align: justify;
+	}
+	.name {
+		text-align: right;
+		font-size: 22px;
+		color: #e5e5e5;
+	}
+}
+
 .login {
 	padding-top: 10%;
 	padding-bottom: 30%;
