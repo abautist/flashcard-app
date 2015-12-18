@@ -1,16 +1,260 @@
 [
 {
-	"front": "Test",
-	"back": "Test back",
+	"front": "What are ruby gems?",
+	"back": "Downloadable methods, similar to node modules.",
 	"image": "",
-	"category": "HTML"
+	"category": "Ruby Rails"
 
 },
 {
-	"front": "Test2",
-	"back": "Test2 back",
+	"front": "What is the difference between a symbol and a string?",
+	"back": "Symbols are immutable. Mutable objects can be changed after assignment while immutable objects can only be overwrittern.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "What is a range?",
+	"back": "A set of values with a beginning and an end.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "What does attr_accessor do?",
+	"back": "Defines setter and getter methods for each symbol passed as a parameter.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "How can you define a constant?",
+	"back": "Create a variable with all caps.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "In rails what does attr_accessible do?",
+	"back": "A filter that allows read and write attributes.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "What is the purpose of yield?",
+	"back": "A method to perform a code block.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "How do you store API keys when creating an app?",
+	"back": "Store in a .env file",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "How do I send parameters through a url?",
+	"back": "GET method that adds a query string :parameter_name",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "Explain MVC",
+	"back": "Model View Controller",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "What is RESTful routing?",
+	"back": "Instead of relying exclusively on the URL to indicate what webpage you want to go to (and just using the one method), it's a combination of a VERB and URL.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "What is the differnce between unit tests and functional tests?",
+	"back": "Unit Test - testing an individual unit, such as a method (function) in a class, with all dependencies mocked up.
+					 Functional Test - testing a slice of functionality in a system. This will test many methods and may interact with dependencies.",
+	"image": "",
+	"category": "Ruby Rails"
+},
+{
+	"front":  "What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?",
+	"back": "- UI: intuitive 
+						- Security: auth, secret API keys
+						- Performance: 
+						- SEO: content, responsive, semantic HTML, load time
+						- Maintainability: DRY, adding comments, consistency
+						- Technology: Browser compatability",
+	"image": "",
+	"category": "General"
+},
+{
+	"front":  "What does a DOCTYPE do?",
+	"back": "It sets the namespace and standard syntax rules for the browser to determine which rendering mode to use.",
+	"image": "",
+	"category": "HTML"
+},
+{
+	"front":  "What is the difference between HTML and XHTML?",
+	"back": "XHTML is HTML expressed in XML, can be 'strict' or 'transitional'. Syntax rules are generally tigher for XHTML, doctype is required.",
+	"image": "",
+	"category": "HTML"
+},
+{
+	"front":  "What are 'data-' attributes good for?",
+	"back": "Storing arbitrary data on HTML elements without affecting the semantics (too much).",
+	"image": "",
+	"category": "HTML"
+},
+{
+	"front":  "Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.",
+	"back": "All are client-side storage techniques. Cookies allow only strings while sS and lS also allow JavaScript data like objects. sessionStorage is only available in the session, so is deleted when the browser closes. Local storage is stored in localStorage and persists beyond sessions",
+	"image": "",
+	"category": "HTML"
+},
+{
+	"front":  "Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?",
+	"back": "Performance reasons. You want the CSS to be available as soon as possible to correctly display the site, and scripts in the head would block rendering while they're being loaded, so you want them to be requested after the rest of the document. One exception would be a feature testing lib like 'Modernizr'.",
+	"image": "",
+	"category": "HTML"
+},
+{
+	"front":  "What is the difference between classes and IDs in CSS?",
+	"back": "IDs must be unique and take higher priority in the cascade. Only Classes should be used for styling.",
 	"image": "",
 	"category": "CSS"
+},
+{
+	"front":  "What's the difference between 'resetting' and 'normalizing' CSS? Which would you choose, and why?",
+	"back": "Resetting overwrites the default browser behavior (and usually sets everything to `none` or `0` ), while normalizing kind of 'evens it out' across browsers to make sure they all apply the same sensible defaults.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "Describe Floats and how they work.",
+	"back": "Floats take an element out of the regular document flow and move it `left` or `right`.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "Describe z-index and how stacking context is formed.",
+	"back": "z-index sets the order of elements along the z-axis (from the screen outward), and defines which elements are displayed on top. Only applies to positioned elements. Context is inherited from the parent, so an element inside a parent with z-index can only be positioned within that context.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "How do you optimize your webpages for print?",
+	"back": "Print media queries, pretty much hiding anything but the essential content, disabling background images and other 'ink-intensive' stuff, setting body type color to `#000`, defining a few basic `page-break-after` rules, and so on.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "What are the advantages/disadvantages of using CSS preprocessors?",
+	"back": "One disadvantage might be that if you're not careful / you don't know what you're doing, the CSS can get bloated.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "List as many values for the display property that you can remember.",
+	"back": "> block, inline, inline-block, table, table-row, table-cell, list-item, flex.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "What's the difference between inline and inline-block?",
+	"back": "Inline-block generally behaves like a block-level element, but does not force line breaks before or after",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "What's the difference between a relative, fixed, absolute and statically positioned element?",
+	"back": "static: normal document flow;
+relative: position element in offset to normal document flow;
+absolute: position relative to parent element (or next higher element with positioning);
+fixed: position relative to browser viewport.",
+	"image": "",
+	"category": "CSS"
+},
+{
+	"front":  "Explain event delegation.",
+	"back": "An event on a child element also fires on the parent due to bubbling, so it's possible to listen for events on the parent and then check for the original source.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Explain how 'this' works in JavaScript.",
+	"back": "It depends on the context. 'this' is usually the object that contains the function 'this' is in.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Explain how prototypal inheritance works",
+	"back": "Any method that is part of an object, is also available in instances of objects that are based on it.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Explain why the following doesn't work as an IIFE: 'function foo(){ }();'.",
+	"back": "Parser treats this a function declaration, with an unrelated () after. Throws Error",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "What's the difference between a variable that is: 'null;, 'undefined' or 'undeclared'?",
+	"back": "UPDATE ME!",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "What's the difference between '.call' and '.apply'?",
+	"back": "I think '.call' takes multiple individual arguments, '.apply' only one (array)",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Explain Function.prototype.bind.",
+	"back": "Call bind on a function prototype it will chain what is bound on a prototype variable",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Explain AJAX in as much detail as possible.",
+	"back": "Stands for Asynchronous JavaScript and XML. Enables the transfer of data asynchronously from the server via the XMLHttpRequest Object in JavaScript.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Explain 'hoisting'.",
+	"back": "Hoisting is JavaScript's default behavior of moving declarations to the top.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Describe event bubbling. What's the difference between an 'attribute' and a 'property'?",
+	"back": "attributes are written into the actual HTML tag, like <div class='foo'> while properties are set on the DOM node, after it is parsed.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Why is extending built in JavaScript objects not a good idea?",
+	"back": "Because everything is an object in JavaScript. Due to inheritance your customizations would almost certainly end up somewhere they shouldn't.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "Difference between document load event and document ready event?",
+	"back": "Load fires after the entire document (+ assets) is done, ready fires after DOM parsing.
+",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "What is the difference between '==' and '==='?",
+	"back": "=== strict equals also compares type. generally preferred.",
+	"image": "",
+	"category": "JavaScript"
+},
+{
+	"front":  "",
+	"back": "",
+	"image": "",
+	"category": "JavaScript"
+},
 
-}
 ]
