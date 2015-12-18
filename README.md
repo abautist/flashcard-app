@@ -31,10 +31,14 @@ Active retrieval usings tools like flashcards makes learning stick and will have
 
 ### Approach Taken
 
-![Retrieval Screenshot 1](https://github.com/abautist/webstore/blob/master/static/images/Screenshots/landingpage.png "JF Screenshot 1")
+![Retrieval Screenshot 1](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.05.52%20AM.png "Retrieval Screenshot 1")
 
+![Retrieval Screenshot 2](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.06.25%20AM.png "Retrieval Screenshot 2")
 
-### Known Issues
+![Retrieval Screenshot 3](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.07.34%20AM.png "Retrieval Screenshot 3")
+
+### Known Issues / Features to be Added
+* Mobile design
 
 
 
