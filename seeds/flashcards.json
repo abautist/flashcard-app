@@ -4,7 +4,6 @@
 	"back": "Downloadable methods, similar to node modules.",
 	"image": "",
 	"category": "Ruby Rails"
-
 },
 {
 	"front": "What is the difference between a symbol and a string?",
@@ -68,19 +67,13 @@
 },
 {
 	"front":  "What is the differnce between unit tests and functional tests?",
-	"back": "Unit Test - testing an individual unit, such as a method (function) in a class, with all dependencies mocked up.
-					 Functional Test - testing a slice of functionality in a system. This will test many methods and may interact with dependencies.",
+	"back": "Unit Test - testing an individual unit, such as a method (function) in a class, with all dependencies mocked up. Functional Test - testing a slice of functionality in a system. This will test many methods and may interact with dependencies.",
 	"image": "",
 	"category": "Ruby Rails"
 },
 {
 	"front":  "What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?",
-	"back": "- UI: intuitive 
-						- Security: auth, secret API keys
-						- Performance: 
-						- SEO: content, responsive, semantic HTML, load time
-						- Maintainability: DRY, adding comments, consistency
-						- Technology: Browser compatability",
+	"back": "- UI: intuitive - Security: auth, secret API keys - Performance: - SEO: content, responsive, semantic HTML, load time - Maintainability: DRY, adding comments, consistency - Technology: Browser compatability.",
 	"image": "",
 	"category": "General"
 },
@@ -152,7 +145,7 @@
 },
 {
 	"front":  "List as many values for the display property that you can remember.",
-	"back": "> block, inline, inline-block, table, table-row, table-cell, list-item, flex.",
+	"back": "block, inline, inline-block, table, table-row, table-cell, list-item, flex.",
 	"image": "",
 	"category": "CSS"
 },
@@ -164,10 +157,7 @@
 },
 {
 	"front":  "What's the difference between a relative, fixed, absolute and statically positioned element?",
-	"back": "static: normal document flow;
-relative: position element in offset to normal document flow;
-absolute: position relative to parent element (or next higher element with positioning);
-fixed: position relative to browser viewport.",
+	"back": "static: normal document flow; relative: position element in offset to normal document flow; absolute: position relative to parent element (or next higher element with positioning); fixed: position relative to browser viewport.",
 	"image": "",
 	"category": "CSS"
 },
@@ -239,8 +229,7 @@ fixed: position relative to browser viewport.",
 },
 {
 	"front":  "Difference between document load event and document ready event?",
-	"back": "Load fires after the entire document (+ assets) is done, ready fires after DOM parsing.
-",
+	"back": "Load fires after the entire document (+ assets) is done, ready fires after DOM parsing.",
 	"image": "",
 	"category": "JavaScript"
 },
@@ -249,12 +238,5 @@ fixed: position relative to browser viewport.",
 	"back": "=== strict equals also compares type. generally preferred.",
 	"image": "",
 	"category": "JavaScript"
-},
-{
-	"front":  "",
-	"back": "",
-	"image": "",
-	"category": "JavaScript"
-},
-
+}
 ]
