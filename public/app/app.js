@@ -26,6 +26,10 @@ app.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
 		templateUrl: "app/views/userLogin.html",
 		controller: "SignupCtrl"
 	})
+	.when("/about", {
+		templateUrl: "app/views/about.html",
+		controller: "AboutCtrl"
+	})
 	.otherwise({
 		templateUrl: "app/views/404.html"
 	});
