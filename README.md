@@ -31,6 +31,8 @@ Active retrieval usings tools like flashcards makes learning stick and will have
 
 ### Approach Taken
 
+Started off brainstorming design ideas with wireframes and entity relationship diagrams (ERDs). From there, I built a basic skeleton of the app, setting up the backend using Express/Node.js as well as creating my own API to be called to the front-end. After that, worked on building out the front-end using AngularJS and lastly polishing up the site with SASS.
+
 ![Retrieval Screenshot 1](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.05.52%20AM.png "Retrieval Screenshot 1")
 
 ![Retrieval Screenshot 2](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.06.25%20AM.png "Retrieval Screenshot 2")
@@ -39,6 +41,7 @@ Active retrieval usings tools like flashcards makes learning stick and will have
 
 ### Known Issues / Features to be Added
 * Mobile design
+* Add relationships between created cards and CurrentUser
 
 
 
