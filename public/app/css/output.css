@@ -324,4 +324,12 @@ body {
   background: -webkit-linear-gradient(to left, #232526, #414345);
   background: linear-gradient(to left, #232526, #414345); }
 
+.error-pg {
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  margin-top: -5%;
+  padding-top: 10%;
+  padding-bottom: 100%; }
+
 /*# sourceMappingURL=output.css.map */
