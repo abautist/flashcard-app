@@ -37,6 +37,20 @@ body {
 	.photo {
 		padding-top: 2%;
 	}
+	.caption {
+		text-align: center;
+		font-size: 24px;
+		color: black;
+		a {
+			font-size: 24px;
+			color: #ccc;
+			margin-left: 3%;
+			margin-right: 3%;
+			&:hover {
+				color: black;
+			}
+		}
+	}
 	.content {
 		margin-top: 2%;
 		font-size: 18px;
@@ -46,6 +60,14 @@ body {
 		text-align: right;
 		font-size: 22px;
 		color: #e5e5e5;
+	}
+	.back-btn {
+		margin-top: 3%;
+		color: #ccc;
+		font-size: 14px;
+		&:hover {
+			color: #333333;
+		}
 	}
 }
 
