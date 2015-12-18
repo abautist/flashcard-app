@@ -101,8 +101,10 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 .controller('FlashcardNewCtrl', [
 	'$scope',
 	'$route',
+	'$window',
 	'Flashcard',
-	function($scope, $route, Flashcard) {
+	function($scope, $route, $window, Flashcard) {
+
 		$scope.createFlashcard = function() {
 			
 			var params = {
@@ -114,7 +116,7 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 			console.log(params);
 			var newFlashcard = new Flashcard(params);
 			newFlashcard.$save();
-			$route.reload();
+			$window.location.reload();
 		}
 }])
 .controller('FlashcardDeleteCtrl', [
