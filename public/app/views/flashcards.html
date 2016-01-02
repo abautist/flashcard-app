@@ -2,18 +2,10 @@
 <div class="section-1" id="splash-section">
 	<h1 class="title" data-lettering="letters">Retrieval</h1>
 	<div class="container-fluid">
-		<div class="row ani-container">
-			<div class="splash-cards col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<div class="well splash-card" ng-class="{on: $index === selectedIdx}" ng-repeat="card in flashcards | limitTo:2">
-					<h3 class="card-header"> {{ card.category }} </h3>
-					<p class="splash-text">{{ card.front }}</p>
-				</div>
-			</div>
-			<div class="splash-btns col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<p class="splash-content">A simple web application to create and use flashcards.</p>
-				<span class="btns"><a href="#" scroll-to="create-section" class="landing-pg-btns btn btn-default btn-lg">Create</a></span>
-				<span class="btns"><a href="#" scroll-to="search-section" class=" landing-pg-btns btn btn-primary btn-lg">Search</a></span>
-			</div>
+		<div class="splash-btns col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<p class="splash-content">A simple web application to create and use flashcards.</p>
+			<div class="btns"><a href="#" scroll-to="create-section" class="landing-pg-btns btn btn-default btn-lg">Create</a></div>
+			<div class="btns"><a href="#" scroll-to="search-section" class=" landing-pg-btns btn btn-primary btn-lg">Search</a></div>
 		</div>
 	</div>
 </div>

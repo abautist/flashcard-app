@@ -5,7 +5,6 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	$scope.timer = null;
 	$scope.filteredArray = [];
 
-
 	Flashcard.query(function success(data) {
 		var shuffleData = shuffle(data);	
 			$scope.flashcards = shuffleData;

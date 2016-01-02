@@ -1,54 +1,52 @@
 
 <div class="container create" ng-controller="FlashcardNewCtrl">
 	<div class="create-hdr">Add a new card here!</div>
-	<p class="form-group col-xs-8 col-sm-8 col-md-8 col-lg-8">Exercise your brain and level up on your studying. Add flashcards to improve your ability to practice and retain core concepts.</p>
-	<br />
+	<p class="form-group">Exercise your brain and level up on your studying. Add flashcards to improve your ability to practice and retain core concepts.</p>
+	<p class="note"><em>Note: You must be logged in to create a card.</em></p>
 	<form ng-submit="createFlashcard()">
-		<div class="form-group col-xs-8 col-sm-8 col-md-10 col-lg-9">
+		<div class="form-group col-xs-12 col-sm-12 col-md-10 col-lg-9">
 			<div class="row">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				<div>
 					<label class="create-front">Front</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+				<div>
 					<input type="text" ng-model="front" class="form-control" placeholder="ex. What is Javascript?">
 				</div>
 			</div>
 			<br />
 			<div class="row">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				<div>
 					<label>Back</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+				<div>
 					<textarea rows="5" ng-model="back" class="form-control" placeholder="Javascript is a high-level, dynamic, untyped, and interpreted programming language."></textarea>
 				</div>
 			</div>
 			<br />
-			<div class="row">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			<div class="new-form row">
+				<div>
 					<label>Image Link</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+				<div>
 					<input type="text" ng-model="image" class="form-control" placeholder="ex. jpeg">
 				</div>
 			</div>
 			<br />
 			<div class="row">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				<div>
 					<label>Category</label>
 				</div>
-				<div class="col-xs-11 col-sm-11 col-md-8 col-lg-10">
+				<div>
 					<input type="text" ng-model="category" class="form-control" placeholder="Javascript">
 				</div>
 			</div>
-			<br />
-			<br />
-			<p><em style="color:#ccc">Note: You must be logged in to create a card.</em></p>
-			<div class="alert alert-success" ng-show="cardCreated">
-      	<p>Flashcard Created! Scroll down to check it out.</p>
-    	</div>
 		</div>
-		<div class="form-btn col-xs-4 col-sm-4 col-md-2 col-lg-2">
+		<div class="form-btn">
 			<button type="submit" class="create-form-btn animated pulse infinite btn btn-primary">Create!</button>
 		</div>
+		<div class="alert alert-success" ng-show="cardCreated">
+			<p>Flashcard Created! Scroll down to check it out.</p>
+		</div>
+
 	</form>
 </div>
