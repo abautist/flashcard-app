@@ -17,17 +17,17 @@
 <div class="section-3" id="search-section">
 	<h2>Search Flashcards and Filter by Study Topic</h2>
 	<div class="section-3-filters">	
-		<div class="section-3-hdr col-xs-6 col-sm-6 col-md-6 col-lg-8">
-			<div class="row search-row col-xs-6 col-sm-6 col-md-6 col-lg-2">
+		<div class="section-3-hdr">
+			<div>
 				<label>Search:</label>
 			</div>
-			<div class="row col-xs-6 col-sm-6 col-md-6 col-lg-10">
+			<div class="row container col-xs-12 col-sm-12 col-md-6 col-lg-10">
 				<input type="text" class="form-control" placeholder="Ex. Javascript" ng-model="search">
 			</div>
 		</div>
-		<div class="row category-filter search-row col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<div class="row category-filter search-row container col-xs-12 col-sm-12 col-md-6 col-lg-4">
 			<form>
-		    <label>Filter by Category: </label>
+		    <label>Filter by Category: &nbsp;</label>
 		    <select ng-model="category">
 		      <option ng-repeat="option in myOptions" value="{{ option.category }}">{{ option.category }}</option>
 		    </select>
@@ -38,7 +38,7 @@
 		<div id="cards-section" class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
 			<div class="flashcards well-container">
 				<div class="well">
-					<div class="front col-xs-6 col-sm-6 col-md-6 col-lg-10">
+					<div class="front">
 						<div class="card-hdr-front"><h4>{{ card.category }}</h4></div>
 						<div class="card-body-front">{{ card.front }}</div>
 					</div>

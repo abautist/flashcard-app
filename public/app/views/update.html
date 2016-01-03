@@ -2,7 +2,7 @@
 		<a class="modal-btn pull-right" ng-click="cancel()"><i class="fa fa-times-circle fa-lg"></i></a>
     <h3 class="modal-title">Update Card</h3>
 </div>
-<div class="modal-body col-xs-6 col-sm-6 col-md-10 col-lg-10 col-xs-offset-3 col-sm-offset-3 col-md-offset-1 col-lg-offset-1">
+<div class="modal-body col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
 
 	<form ng-submit='putFlashcard()'>
 		<div class="form-group">
@@ -20,12 +20,13 @@
 				<label>Image Link</label>
 				<input type="text" ng-model="image" class="form-control" placeholder="ex .jpeg">
 			</div>
+			<br />
 			<div class="row">
 				<label>Category</label>
 				<input type="text" ng-model="category" class="form-control" placeholder="{{item.category}}" value="{{item.category}}">
 			</div>
 			<br />
-			<div class="row">
+			<div class="update-btn">
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</div>

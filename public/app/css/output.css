@@ -186,7 +186,7 @@ body {
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        font-size: 18px;
+        font-size: 22px;
         color: white;
         border: 2px solid #ccc;
         background: transparent; }
@@ -195,46 +195,48 @@ body {
           color: black; }
 
 .section-3 {
+  padding-top: 10%;
   height: 700px; }
   .section-3 h2 {
     text-align: center;
-    font-size: 36px;
-    font-weight: 100px;
+    font-size: 32px;
     color: white;
     margin-bottom: 3%; }
-  .section-3 .section-3-filters label {
-    font-size: 24px;
-    font-weight: 100;
-    color: white;
-    margin-left: 20%; }
-  .section-3 .section-3-filters .form-control {
-    background: transparent;
-    border-radius: 0;
-    color: white;
-    border: 1px solid white;
-    box-shadow: none;
-    outline: none; }
-  .section-3 .section-3-filters input::-webkit-input-placeholder {
-    color: #e5e5e5 !important; }
-  .section-3 .section-3-filters textarea::-webkit-input-placeholder {
-    color: #e5e5e5 !important; }
-  .section-3 .section-3-filters input:-moz-placeholder {
-    /* Firefox 18- */
-    color: #e5e5e5 !important; }
-  .section-3 .section-3-filters input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #e5e5e5 !important; }
-  .section-3 .section-3-filters input:-ms-input-placeholder {
-    color: #e5e5e5 !important; }
-  .section-3 .section-3-filters .category-filter {
-    text-align: center;
-    margin-bottom: 3%; }
-    .section-3 .section-3-filters .category-filter select {
-      margin-left: 2%;
-      width: 30%;
-      -webkit-appearance: value;
-      -moz-appearance: value;
-      appearance: value; }
+  .section-3 .section-3-filters {
+    margin-left: 5%; }
+    .section-3 .section-3-filters label {
+      font-size: 16px;
+      font-weight: 100;
+      color: white; }
+    .section-3 .section-3-filters .form-control {
+      width: 100%;
+      background: transparent;
+      border-radius: 0;
+      color: white;
+      border: 1px solid white;
+      box-shadow: none;
+      outline: none; }
+    .section-3 .section-3-filters input::-webkit-input-placeholder {
+      color: #ccc !important; }
+    .section-3 .section-3-filters textarea::-webkit-input-placeholder {
+      color: #ccc !important; }
+    .section-3 .section-3-filters input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #ccc !important; }
+    .section-3 .section-3-filters input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #ccc !important; }
+    .section-3 .section-3-filters input:-ms-input-placeholder {
+      color: #ccc !important; }
+    .section-3 .section-3-filters .category-filter {
+      width: 100%;
+      margin-top: 3%;
+      margin-bottom: 3%; }
+      .section-3 .section-3-filters .category-filter select {
+        width: 50%;
+        -webkit-appearance: value;
+        -moz-appearance: value;
+        appearance: value; }
   .section-3 .sec-3-cards .well-container {
     box-shadow: 0 20px 12px -12px #323232;
     perspective: 1000; }
@@ -270,7 +272,7 @@ body {
         top: 90%; }
         .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn {
           color: #ccc;
-          border-radius: 0px;
+          border-radius: 10%;
           border: 1px solid #ccc;
           background: transparent; }
           .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn:hover {
@@ -280,7 +282,7 @@ body {
     .section-3 .sec-3-cards .well-container .btn {
       font-size: 16px;
       color: #ccc;
-      border-radius: 0px;
+      border-radius: 10%;
       border: 1px solid #ccc;
       background: transparent; }
       .section-3 .sec-3-cards .well-container .btn:hover {
@@ -312,25 +314,27 @@ body {
   box-shadow: none;
   outline: none; }
 .modal-body input::-webkit-input-placeholder {
-  color: #e5e5e5 !important; }
+  color: #ccc !important; }
 .modal-body textarea::-webkit-input-placeholder {
-  color: #e5e5e5 !important; }
+  color: #ccc !important; }
 .modal-body input:-moz-placeholder {
   /* Firefox 18- */
-  color: #e5e5e5 !important; }
+  color: #ccc !important; }
 .modal-body input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #e5e5e5 !important; }
+  color: #ccc !important; }
 .modal-body input:-ms-input-placeholder {
-  color: #e5e5e5 !important; }
-.modal-body .btn {
-  color: #ccc;
-  border-radius: 0px;
-  border: 2px solid #ccc;
-  background: transparent; }
-  .modal-body .btn:hover {
-    background: #ccc;
-    color: black; }
+  color: #ccc !important; }
+.modal-body .update-btn {
+  text-align: center; }
+  .modal-body .update-btn .btn {
+    color: #ccc;
+    border-radius: 0px;
+    border: 2px solid #ccc;
+    background: transparent; }
+    .modal-body .update-btn .btn:hover {
+      background: #ccc;
+      color: black; }
 
 .modal-footer {
   background: #232526;
@@ -379,6 +383,156 @@ body {
         border: 2px solid #ccc;
         background: transparent; }
         .section-1 .splash-btns span.btns a.landing-pg-btns:hover {
+          background: #ccc;
+          color: black; }
+
+  .section-2 {
+    height: 750px; }
+    .section-2 div.create {
+      padding-top: 12%; }
+      .section-2 div.create .create-hdr {
+        font-size: 32px;
+        text-align: center;
+        border-bottom: 1px solid white;
+        color: white;
+        margin-bottom: 2%; }
+      .section-2 div.create p {
+        color: #f2f2f2;
+        font-size: 16px;
+        margin-bottom: 3%; }
+      .section-2 div.create .note {
+        color: #ccc;
+        font-size: 14px; }
+      .section-2 div.create label {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 100;
+        color: #f2f2f2; }
+      .section-2 div.create .form-control {
+        width: 100%;
+        background: transparent;
+        border-radius: 0;
+        color: white;
+        border: none;
+        border: 1px solid white;
+        box-shadow: none;
+        outline: none; }
+      .section-2 div.create input::-webkit-input-placeholder {
+        color: #ccc !important; }
+      .section-2 div.create textarea::-webkit-input-placeholder {
+        color: #ccc !important; }
+      .section-2 div.create input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #ccc !important; }
+      .section-2 div.create input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #ccc !important; }
+      .section-2 div.create input:-ms-input-placeholder {
+        color: #ccc !important; }
+      .section-2 div.create .form-btn {
+        text-align: center; }
+        .section-2 div.create .form-btn button.create-form-btn {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          font-size: 18px;
+          color: white;
+          border: 2px solid #ccc;
+          background: transparent; }
+          .section-2 div.create .form-btn button.create-form-btn:hover {
+            background: #ccc;
+            color: black; }
+
+  .section-3 {
+    height: 700px; }
+    .section-3 h2 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 100px;
+      color: white;
+      margin-bottom: 3%; }
+    .section-3 .section-3-filters label {
+      font-size: 24px;
+      font-weight: 100;
+      color: white;
+      margin-left: 20%; }
+    .section-3 .section-3-filters .form-control {
+      background: transparent;
+      border-radius: 0;
+      color: white;
+      border: 1px solid white;
+      box-shadow: none;
+      outline: none; }
+    .section-3 .section-3-filters input::-webkit-input-placeholder {
+      color: #e5e5e5 !important; }
+    .section-3 .section-3-filters textarea::-webkit-input-placeholder {
+      color: #e5e5e5 !important; }
+    .section-3 .section-3-filters input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #e5e5e5 !important; }
+    .section-3 .section-3-filters input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #e5e5e5 !important; }
+    .section-3 .section-3-filters input:-ms-input-placeholder {
+      color: #e5e5e5 !important; }
+    .section-3 .section-3-filters .category-filter {
+      text-align: center;
+      margin-bottom: 3%; }
+      .section-3 .section-3-filters .category-filter select {
+        margin-left: 2%;
+        width: 30%;
+        -webkit-appearance: value;
+        -moz-appearance: value;
+        appearance: value; }
+    .section-3 .sec-3-cards .well-container {
+      box-shadow: 0 20px 12px -12px #323232;
+      perspective: 1000; }
+      .section-3 .sec-3-cards .well-container:hover .well {
+        transform: rotateY(180deg); }
+      .section-3 .sec-3-cards .well-container .well {
+        transition: .8s;
+        transform-style: preserve-3d;
+        height: 240px; }
+      .section-3 .sec-3-cards .well-container .front,
+      .section-3 .sec-3-cards .well-container .back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        width: 90%;
+        height: 90%; }
+      .section-3 .sec-3-cards .well-container .front {
+        z-index: 2;
+        transform: rotateY(0deg); }
+        .section-3 .sec-3-cards .well-container .front .card-hdr-front {
+          border-bottom: 2px solid #323232; }
+          .section-3 .sec-3-cards .well-container .front .card-hdr-front h4 {
+            font-size: 20px;
+            font-weight: 900; }
+        .section-3 .sec-3-cards .well-container .front .card-body-front {
+          padding-top: 3%; }
+      .section-3 .sec-3-cards .well-container .back {
+        transform: rotateY(180deg);
+        margin-top: 2%; }
+        .section-3 .sec-3-cards .well-container .back .back-content {
+          height: 65%; }
+        .section-3 .sec-3-cards .well-container .back .back-btns {
+          top: 90%; }
+          .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn {
+            color: #ccc;
+            border-radius: 0px;
+            border: 1px solid #ccc;
+            background: transparent; }
+            .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn:hover {
+              background: #cc0000;
+              color: #660000;
+              border: none; }
+      .section-3 .sec-3-cards .well-container .btn {
+        font-size: 16px;
+        color: #ccc;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        background: transparent; }
+        .section-3 .sec-3-cards .well-container .btn:hover {
           background: #ccc;
           color: black; } }
 

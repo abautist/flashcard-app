@@ -188,7 +188,374 @@ body {
 	}
 }
 
+.section-2 {
+	height: 750px;
 
+	div.create {
+		padding-top: 12%;
+
+		.create-hdr {
+			font-size: 32px;
+			text-align: center;
+			border-bottom: 1px solid white;
+			color: white;
+			margin-bottom: 2%;
+		}
+
+		p { 
+			color: #f2f2f2;
+			font-size: 16px;
+			margin-bottom: 3%;
+		}
+
+		.note {
+			color: #ccc;
+			font-size: 14px;
+		}
+
+		label {
+			width: 100%;
+			font-size: 16px;
+			font-weight: 100;
+			color: #f2f2f2;
+		}
+
+		.form-control {
+			width: 100%;
+			background: transparent;
+			border-radius: 0;
+			color: white;
+			border: none;
+			border: 1px solid white;
+			box-shadow: none;
+			outline: none;
+		}
+
+		input::-webkit-input-placeholder {
+			color: #ccc !important;
+		}
+
+		textarea::-webkit-input-placeholder {
+			color: #ccc !important;
+		}
+		 
+		input:-moz-placeholder { /* Firefox 18- */
+			color: #ccc !important;  
+		}
+		 
+		input::-moz-placeholder {  /* Firefox 19+ */
+			color: #ccc !important;  
+		}
+		 
+		input:-ms-input-placeholder {  
+			color: #ccc !important;  
+		}
+
+		.form-btn {
+			text-align: center;
+
+			button.create-form-btn {
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				font-size: 22px;
+				color: white;
+				border: 2px solid #ccc;
+				background: transparent;
+
+				&:hover {
+					background: #ccc;
+					color: black;
+				}
+			}
+		}		
+	}
+}
+
+.section-3 {
+	padding-top: 10%;
+	height: 700px;
+
+	h2 {
+		text-align: center;
+		font-size: 32px;
+		color: white;
+		margin-bottom: 3%;
+	}
+
+	.section-3-filters {
+		margin-left: 5%;
+
+		label {
+			font-size: 16px;
+			font-weight: 100;
+			color: white;
+		}
+
+		.form-control {
+			width: 100%;
+			background: transparent;
+			border-radius: 0;
+			color: white;
+			border: 1px solid white;
+			box-shadow: none;
+			outline: none;
+		}
+
+		input::-webkit-input-placeholder {
+			color: #ccc !important;
+		}
+
+		textarea::-webkit-input-placeholder {
+			color: #ccc !important;
+		}
+		 
+		input:-moz-placeholder { /* Firefox 18- */
+			color: #ccc !important;  
+		}
+		 
+		input::-moz-placeholder {  /* Firefox 19+ */
+			color: #ccc !important;  
+		}
+		 
+		input:-ms-input-placeholder {  
+			color: #ccc !important;  
+		}
+
+		.category-filter {
+			width: 100%;
+			margin-top: 3%;
+			margin-bottom: 3%;
+			
+			select {
+				width: 50%;
+			   -webkit-appearance: value;
+			   -moz-appearance: value;
+			   appearance: value;
+			}
+		}
+	}
+
+	.sec-3-cards {
+		.well-container {
+			box-shadow: 0 20px 12px -12px #323232;
+			perspective: 1000;
+
+			&:hover .well {
+				transform: rotateY(180deg);
+				}
+
+			.well {
+				transition: .8s;
+				transform-style: preserve-3d;
+				height: 240px;
+			}
+
+			.front, 
+			.back {
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				position: absolute;
+				width: 90%;
+				height: 90%;
+			}
+
+			.front {
+				z-index: 2;
+				transform: rotateY(0deg);
+
+				.card-hdr-front {
+					border-bottom: 2px solid #323232;
+					
+					h4 {
+						font-size: 20px;
+						font-weight: 900;
+					}
+				}
+
+				.card-body-front {
+					padding-top: 3%;
+				}
+				
+			}
+
+			.back {
+				transform: rotateY(180deg);
+				margin-top: 2%;
+
+				.back-content {
+					height: 65%;
+				}
+				.back-btns {
+					top: 90%;
+
+					.trash-btn {
+						color: #ccc;
+						border-radius: 10%;
+						border: 1px solid #ccc;
+						background: transparent;
+
+						&:hover {
+							background: #cc0000;
+							color: #660000;
+							border: none;
+						}
+					}
+				}
+			}
+
+			.btn {
+				font-size: 16px;
+				color: #ccc;
+				border-radius: 10%;
+				border: 1px solid #ccc;
+				background: transparent;
+
+				&:hover {
+					background: #ccc;
+					color: black;
+				}
+			}
+		}	
+	}		
+}
+
+.modal-header {
+	color: white;
+	font-size: 36px;
+	background: #232526;
+	background: -webkit-linear-gradient(to left, #232526 , #414345);
+	background: linear-gradient(to left, #232526 , #414345);
+
+	.modal-btn {
+		font-size: 16px;
+		color: #ccc;
+
+		&:hover {
+			color: white;
+			cursor: pointer;
+		}
+	} 
+}
+
+.modal-body {
+	label {
+		font-size: 18px;
+		font-weight: 100;
+		color: white;
+	}
+
+	.form-control {
+		background: transparent;
+		border-radius: 0;
+		color: white;
+		border: 1px solid white;
+		box-shadow: none;
+		outline: none;
+	}
+
+	input::-webkit-input-placeholder {
+		color: #ccc !important;
+	}
+
+	textarea::-webkit-input-placeholder {
+		color: #ccc !important;
+	}
+	 
+	input:-moz-placeholder { /* Firefox 18- */
+		color: #ccc !important;  
+	}
+	 
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: #ccc !important;  
+	}
+	 
+	input:-ms-input-placeholder {  
+		color: #ccc !important;  
+	}
+
+	.update-btn {
+		text-align: center;
+		
+		.btn {
+		color: #ccc;
+		border-radius: 0px;
+		border: 2px solid #ccc;
+		background: transparent;
+
+			&:hover {
+				background: #ccc;
+				color: black;
+			}
+		}
+	}
+
+}
+
+.modal-footer {
+	background: #232526;
+	background: -webkit-linear-gradient(to left, #232526 , #414345);
+	background: linear-gradient(to left, #232526 , #414345);  
+}
+
+.error-pg {
+	height: 100%;
+	text-align: center;
+	background-color: black;
+	margin-top: -5%;
+	padding-top: 10%;
+	padding-bottom: 100%;
+}
+
+@media (min-width: 760px) {
+	.navbar {
+		background-color: transparent;
+	}
+
+	.section-1 {
+		background: url(../images/study2.jpeg) no-repeat;
+		z-index: 99;
+		background-size: 100% 100%;
+		border-top: 1px solid white;
+		text-align: center;
+		width: 100%;
+		height: 800px;
+		
+		h1.title {
+			padding-top: 0%;
+			font-family: "Crushed";
+			font-size: 200px;
+			font-weight: 900;
+			color: white;
+			.char3 {
+				color: red;
+				font-size: 250px;
+			}
+		}
+
+			.splash-btns {
+		.splash-content {
+			color: #ccc;
+			font-size: 20px;
+		}
+
+		span.btns {
+			margin: 5%;
+			a.landing-pg-btns {
+				padding: 11px 30px;
+				font-size: 25px;
+				color: #ccc;
+				border-radius: 0px;
+				border: 2px solid #ccc;
+				background: transparent;
+				&:hover {
+					background: #ccc;
+					color: black;
+				}
+			}
+		}
+	}
+	}
 
 .section-2 {
 	height: 750px;
@@ -264,7 +631,7 @@ body {
 				color: white;
 				border: 2px solid #ccc;
 				background: transparent;
-				
+
 				&:hover {
 					background: #ccc;
 					color: black;
@@ -274,7 +641,7 @@ body {
 	}
 }
 
-.section-3 {
+	.section-3 {
 	height: 700px;
 	h2 {
 		text-align: center;
@@ -402,133 +769,6 @@ body {
 		}	
 	}		
 }
-
-.modal-header {
-	color: white;
-	font-size: 36px;
-	background: #232526;
-	background: -webkit-linear-gradient(to left, #232526 , #414345);
-	background: linear-gradient(to left, #232526 , #414345);
-	.modal-btn {
-		font-size: 16px;
-		color: #ccc;
-		&:hover {
-			color: white;
-			cursor: pointer;
-		}
-	} 
-}
-
-.modal-body {
-	label {
-		font-size: 18px;
-		font-weight: 100;
-		color: white;
-	}
-	.form-control {
-		background: transparent;
-		border-radius: 0;
-		color: white;
-		border: 1px solid white;
-		box-shadow: none;
-		outline: none;
-	}
-	input::-webkit-input-placeholder {
-		color: #e5e5e5 !important;
-	}
-
-	textarea::-webkit-input-placeholder {
-		color: #e5e5e5 !important;
-	}
-	 
-	input:-moz-placeholder { /* Firefox 18- */
-		color: #e5e5e5 !important;  
-	}
-	 
-	input::-moz-placeholder {  /* Firefox 19+ */
-		color: #e5e5e5 !important;  
-	}
-	 
-	input:-ms-input-placeholder {  
-		color: #e5e5e5 !important;  
-	}
-	.btn {
-		color: #ccc;
-		border-radius: 0px;
-		border: 2px solid #ccc;
-		background: transparent;
-		&:hover {
-			background: #ccc;
-			color: black;
-		}
-	}
-
-}
-
-.modal-footer {
-	background: #232526;
-	background: -webkit-linear-gradient(to left, #232526 , #414345);
-	background: linear-gradient(to left, #232526 , #414345);  
-}
-
-.error-pg {
-	height: 100%;
-	text-align: center;
-	background-color: black;
-	margin-top: -5%;
-	padding-top: 10%;
-	padding-bottom: 100%;
-}
-
-@media (min-width: 760px) {
-	.navbar {
-		background-color: transparent;
-	}
-
-	.section-1 {
-		background: url(../images/study2.jpeg) no-repeat;
-		z-index: 99;
-		background-size: 100% 100%;
-		border-top: 1px solid white;
-		text-align: center;
-		width: 100%;
-		height: 800px;
-		
-		h1.title {
-			padding-top: 0%;
-			font-family: "Crushed";
-			font-size: 200px;
-			font-weight: 900;
-			color: white;
-			.char3 {
-				color: red;
-				font-size: 250px;
-			}
-		}
-
-			.splash-btns {
-		.splash-content {
-			color: #ccc;
-			font-size: 20px;
-		}
-
-		span.btns {
-			margin: 5%;
-			a.landing-pg-btns {
-				padding: 11px 30px;
-				font-size: 25px;
-				color: #ccc;
-				border-radius: 0px;
-				border: 2px solid #ccc;
-				background: transparent;
-				&:hover {
-					background: #ccc;
-					color: black;
-				}
-			}
-		}
-	}
-	}
 
 
 }
