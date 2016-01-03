@@ -1,13 +1,62 @@
 @import url(https://fonts.googleapis.com/css?family=Crushed);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
 
-body {
-	font-family: "Ubuntu";
-	height: 100%;
+@mixin background-gradient {
 	background: #114357;
 	background: -webkit-linear-gradient(to bottom, #114357 , #F29492);
 	background: linear-gradient(to bottom, #114357 , #F29492);
 	background-repeat: no-repeat;
+}
+
+@mixin auth-placeholder-color {
+	input::-webkit-input-placeholder {
+		color: #ccc !important;
+	}
+	 
+	input:-moz-placeholder { 
+		color: #ccc !important;  
+	}
+	 
+	input::-moz-placeholder { 
+		color: #ccc !important;  
+	}
+	 
+	input:-ms-input-placeholder {  
+		color: #ccc !important;  
+	}
+}
+
+@mixin input-placeholder-color {
+	input::-webkit-input-placeholder {
+		color: #ccc !important;
+	}
+
+	textarea::-webkit-input-placeholder {
+		color: #ccc !important;
+	}
+	 
+	input:-moz-placeholder { /* Firefox 18- */
+		color: #ccc !important;  
+	}
+	 
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: #ccc !important;  
+	}
+	 
+	input:-ms-input-placeholder {  
+		color: #ccc !important;  
+	}
+}
+
+html {
+	font-family: "Ubuntu";
+	@include background-gradient;
+}
+
+body {
+	font-family: "Ubuntu";
+	margin: 0;
+	background: transparent;
 }
 
 .navbar {
@@ -22,7 +71,6 @@ body {
 		&:hover {
 			color: #19ff19;
 		}
-
 	}
 
 	.navbar-nav > li > a {
@@ -36,43 +84,53 @@ body {
 	}
 }
 
-
-
 .about {
-	height: 100%;
 	color: white;
 	padding-bottom: 100%;
-	.photo {
-		padding-top: 2%;
+
+	.quote {
+		padding-top: 5%;
+		color: #f2f2f2;
+		font-size: 14px;
 	}
-	.caption {
-		text-align: center;
-		font-size: 24px;
-		color: black;
-		a {
-			font-size: 24px;
-			color: #ccc;
-			margin-left: 3%;
-			margin-right: 3%;
-			&:hover {
-				color: black;
-			}
-		}
-	}
-	.content {
-		margin-top: 2%;
-		font-size: 18px;
-		text-align: justify;
-	}
+
 	.name {
 		text-align: right;
-		font-size: 22px;
-		color: #e5e5e5;
 	}
+
+	.content {
+		margin-top: 2%;
+		font-size: 16px;
+	}
+
+	.me-div {
+	}
+
+	.me {
+		border: 2px solid white;
+		border-radius: 5%;
+		max-width: 100%;
+	}
+
+	.social {
+		padding-top: 5%;
+		margin-left: 15%;
+	}
+
+	.social-lnk {
+		color: white;
+
+		&:hover {
+			color: #333333;
+		}
+	}
+
 	.back-btn {
+		clear: both;
 		margin-top: 3%;
-		color: #ccc;
+		color: white;
 		font-size: 14px;
+
 		&:hover {
 			color: #333333;
 		}
@@ -81,16 +139,19 @@ body {
 
 .login {
 	padding-top: 10%;
-	padding-bottom: 30%;
+	padding-bottom: 100%;
+
 	legend {
 		font-size: 46px;
 		color: white;
 	}
+
 	label {
 		font-size: 24px;
 		font-weight: 100;
 		color: white;
 	}
+
 	.form-control {
 		background: transparent;
 		border-radius: 0;
@@ -100,9 +161,11 @@ body {
 		box-shadow: none;
 		outline: none;
 	}
+
 	.btn-div {
 		margin-top: 5%;
 		text-align: center;
+
 		.btn {
 		padding: 9px 24px;
 		font-size: 24px;
@@ -110,34 +173,26 @@ body {
 		border-radius: 0px;
 		border: 2px solid #ccc;
 		background: transparent;
+
 		&:hover {
 			background: #ccc;
 			color: black;
 			}
 		}	
 	}
+
 	.back-btn {
+		margin-top: 10%;
 		color: white;
 		font-size: 18px;
+
 		&:hover {
 			color: #333333;
 		}
-	}	
-	input::-webkit-input-placeholder {
-		color: #e5e5e5 !important;
 	}
-	 
-	input:-moz-placeholder { /* Firefox 18- */
-		color: #e5e5e5 !important;  
-	}
-	 
-	input::-moz-placeholder {  /* Firefox 19+ */
-		color: #e5e5e5 !important;  
-	}
-	 
-	input:-ms-input-placeholder {  
-		color: #e5e5e5 !important;  
-	}
+
+	@include auth-placeholder-color;	
+
 }
 
 .section-1 {
@@ -188,6 +243,11 @@ body {
 	}
 }
 
+.background-grade {
+	background: transparent;
+}
+
+
 .section-2 {
 	height: 750px;
 
@@ -231,34 +291,16 @@ body {
 			outline: none;
 		}
 
-		input::-webkit-input-placeholder {
-			color: #ccc !important;
-		}
-
-		textarea::-webkit-input-placeholder {
-			color: #ccc !important;
-		}
-		 
-		input:-moz-placeholder { /* Firefox 18- */
-			color: #ccc !important;  
-		}
-		 
-		input::-moz-placeholder {  /* Firefox 19+ */
-			color: #ccc !important;  
-		}
-		 
-		input:-ms-input-placeholder {  
-			color: #ccc !important;  
-		}
+		@include input-placeholder-color;
 
 		.form-btn {
 			text-align: center;
 
 			button.create-form-btn {
-				height: 100px;
-				width: 100px;
+				height: 90px;
+				width: 90px;
 				border-radius: 50%;
-				font-size: 22px;
+				font-size: 18px;
 				color: white;
 				border: 2px solid #ccc;
 				background: transparent;
@@ -283,6 +325,8 @@ body {
 		margin-bottom: 3%;
 	}
 
+	@include input-placeholder-color;
+
 	.section-3-filters {
 		margin-left: 5%;
 
@@ -300,26 +344,6 @@ body {
 			border: 1px solid white;
 			box-shadow: none;
 			outline: none;
-		}
-
-		input::-webkit-input-placeholder {
-			color: #ccc !important;
-		}
-
-		textarea::-webkit-input-placeholder {
-			color: #ccc !important;
-		}
-		 
-		input:-moz-placeholder { /* Firefox 18- */
-			color: #ccc !important;  
-		}
-		 
-		input::-moz-placeholder {  /* Firefox 19+ */
-			color: #ccc !important;  
-		}
-		 
-		input:-ms-input-placeholder {  
-			color: #ccc !important;  
 		}
 
 		.category-filter {
@@ -454,25 +478,7 @@ body {
 		outline: none;
 	}
 
-	input::-webkit-input-placeholder {
-		color: #ccc !important;
-	}
-
-	textarea::-webkit-input-placeholder {
-		color: #ccc !important;
-	}
-	 
-	input:-moz-placeholder { /* Firefox 18- */
-		color: #ccc !important;  
-	}
-	 
-	input::-moz-placeholder {  /* Firefox 19+ */
-		color: #ccc !important;  
-	}
-	 
-	input:-ms-input-placeholder {  
-		color: #ccc !important;  
-	}
+	@include input-placeholder-color;
 
 	.update-btn {
 		text-align: center;
@@ -533,7 +539,7 @@ body {
 			}
 		}
 
-			.splash-btns {
+		.splash-btns {
 		.splash-content {
 			color: #ccc;
 			font-size: 20px;
@@ -600,26 +606,6 @@ body {
 			outline: none;
 		}
 
-		input::-webkit-input-placeholder {
-			color: #ccc !important;
-		}
-
-		textarea::-webkit-input-placeholder {
-			color: #ccc !important;
-		}
-		 
-		input:-moz-placeholder { /* Firefox 18- */
-			color: #ccc !important;  
-		}
-		 
-		input::-moz-placeholder {  /* Firefox 19+ */
-			color: #ccc !important;  
-		}
-		 
-		input:-ms-input-placeholder {  
-			color: #ccc !important;  
-		}
-
 		.form-btn {
 			text-align: center;
 
@@ -665,25 +651,7 @@ body {
 			box-shadow: none;
 			outline: none;
 		}
-		input::-webkit-input-placeholder {
-			color: #e5e5e5 !important;
-		}
 
-		textarea::-webkit-input-placeholder {
-			color: #e5e5e5 !important;
-		}
-		 
-		input:-moz-placeholder { /* Firefox 18- */
-			color: #e5e5e5 !important;  
-		}
-		 
-		input::-moz-placeholder {  /* Firefox 19+ */
-			color: #e5e5e5 !important;  
-		}
-		 
-		input:-ms-input-placeholder {  
-			color: #e5e5e5 !important;  
-		}
 		.category-filter {
 			text-align: center;
 			margin-bottom: 3%;

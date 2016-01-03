@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Crushed);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
-body {
+html {
   font-family: "Ubuntu";
-  height: 100%;
   background: #114357;
   background: -webkit-linear-gradient(to bottom, #114357, #F29492);
   background: linear-gradient(to bottom, #114357, #F29492);
   background-repeat: no-repeat; }
+
+body {
+  font-family: "Ubuntu";
+  margin: 0;
+  background: transparent; }
 
 .navbar {
   background-color: rgba(40, 40, 40, 0.9);
@@ -25,40 +29,39 @@ body {
       color: #7f7f7f; }
 
 .about {
-  height: 100%;
   color: white;
   padding-bottom: 100%; }
-  .about .photo {
-    padding-top: 2%; }
-  .about .caption {
-    text-align: center;
-    font-size: 24px;
-    color: black; }
-    .about .caption a {
-      font-size: 24px;
-      color: #ccc;
-      margin-left: 3%;
-      margin-right: 3%; }
-      .about .caption a:hover {
-        color: black; }
+  .about .quote {
+    padding-top: 5%;
+    color: #f2f2f2;
+    font-size: 14px; }
+  .about .name {
+    text-align: right; }
   .about .content {
     margin-top: 2%;
-    font-size: 18px;
-    text-align: justify; }
-  .about .name {
-    text-align: right;
-    font-size: 22px;
-    color: #e5e5e5; }
+    font-size: 16px; }
+  .about .me {
+    border: 2px solid white;
+    border-radius: 5%;
+    max-width: 100%; }
+  .about .social {
+    padding-top: 5%;
+    margin-left: 15%; }
+  .about .social-lnk {
+    color: white; }
+    .about .social-lnk:hover {
+      color: #333333; }
   .about .back-btn {
+    clear: both;
     margin-top: 3%;
-    color: #ccc;
+    color: white;
     font-size: 14px; }
     .about .back-btn:hover {
       color: #333333; }
 
 .login {
   padding-top: 10%;
-  padding-bottom: 30%; }
+  padding-bottom: 100%; }
   .login legend {
     font-size: 46px;
     color: white; }
@@ -88,20 +91,19 @@ body {
         background: #ccc;
         color: black; }
   .login .back-btn {
+    margin-top: 10%;
     color: white;
     font-size: 18px; }
     .login .back-btn:hover {
       color: #333333; }
   .login input::-webkit-input-placeholder {
-    color: #e5e5e5 !important; }
+    color: #ccc !important; }
   .login input:-moz-placeholder {
-    /* Firefox 18- */
-    color: #e5e5e5 !important; }
+    color: #ccc !important; }
   .login input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #e5e5e5 !important; }
+    color: #ccc !important; }
   .login input:-ms-input-placeholder {
-    color: #e5e5e5 !important; }
+    color: #ccc !important; }
 
 .section-1 {
   background: url(../images/study2.jpeg) no-repeat;
@@ -136,6 +138,9 @@ body {
         .section-1 .splash-btns div.btns a.landing-pg-btns:hover {
           background: #ccc;
           color: black; }
+
+.background-grade {
+  background: transparent; }
 
 .section-2 {
   height: 750px; }
@@ -183,10 +188,10 @@ body {
     .section-2 div.create .form-btn {
       text-align: center; }
       .section-2 div.create .form-btn button.create-form-btn {
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
         border-radius: 50%;
-        font-size: 22px;
+        font-size: 18px;
         color: white;
         border: 2px solid #ccc;
         background: transparent; }
@@ -202,6 +207,18 @@ body {
     font-size: 32px;
     color: white;
     margin-bottom: 3%; }
+  .section-3 input::-webkit-input-placeholder {
+    color: #ccc !important; }
+  .section-3 textarea::-webkit-input-placeholder {
+    color: #ccc !important; }
+  .section-3 input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ccc !important; }
+  .section-3 input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ccc !important; }
+  .section-3 input:-ms-input-placeholder {
+    color: #ccc !important; }
   .section-3 .section-3-filters {
     margin-left: 5%; }
     .section-3 .section-3-filters label {
@@ -216,18 +233,6 @@ body {
       border: 1px solid white;
       box-shadow: none;
       outline: none; }
-    .section-3 .section-3-filters input::-webkit-input-placeholder {
-      color: #ccc !important; }
-    .section-3 .section-3-filters textarea::-webkit-input-placeholder {
-      color: #ccc !important; }
-    .section-3 .section-3-filters input:-moz-placeholder {
-      /* Firefox 18- */
-      color: #ccc !important; }
-    .section-3 .section-3-filters input::-moz-placeholder {
-      /* Firefox 19+ */
-      color: #ccc !important; }
-    .section-3 .section-3-filters input:-ms-input-placeholder {
-      color: #ccc !important; }
     .section-3 .section-3-filters .category-filter {
       width: 100%;
       margin-top: 3%;
@@ -417,18 +422,6 @@ body {
         border: 1px solid white;
         box-shadow: none;
         outline: none; }
-      .section-2 div.create input::-webkit-input-placeholder {
-        color: #ccc !important; }
-      .section-2 div.create textarea::-webkit-input-placeholder {
-        color: #ccc !important; }
-      .section-2 div.create input:-moz-placeholder {
-        /* Firefox 18- */
-        color: #ccc !important; }
-      .section-2 div.create input::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #ccc !important; }
-      .section-2 div.create input:-ms-input-placeholder {
-        color: #ccc !important; }
       .section-2 div.create .form-btn {
         text-align: center; }
         .section-2 div.create .form-btn button.create-form-btn {
@@ -463,18 +456,6 @@ body {
       border: 1px solid white;
       box-shadow: none;
       outline: none; }
-    .section-3 .section-3-filters input::-webkit-input-placeholder {
-      color: #e5e5e5 !important; }
-    .section-3 .section-3-filters textarea::-webkit-input-placeholder {
-      color: #e5e5e5 !important; }
-    .section-3 .section-3-filters input:-moz-placeholder {
-      /* Firefox 18- */
-      color: #e5e5e5 !important; }
-    .section-3 .section-3-filters input::-moz-placeholder {
-      /* Firefox 19+ */
-      color: #e5e5e5 !important; }
-    .section-3 .section-3-filters input:-ms-input-placeholder {
-      color: #e5e5e5 !important; }
     .section-3 .section-3-filters .category-filter {
       text-align: center;
       margin-bottom: 3%; }

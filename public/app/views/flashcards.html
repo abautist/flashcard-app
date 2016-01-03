@@ -9,44 +9,45 @@
 		</div>
 	</div>
 </div>
-
-<div class="section-2">
-	<div id="create-section" ng-include="'app/views/new.html'"></div>
-</div>
-
-<div class="section-3" id="search-section">
-	<h2>Search Flashcards and Filter by Study Topic</h2>
-	<div class="section-3-filters">	
-		<div class="section-3-hdr">
-			<div>
-				<label>Search:</label>
-			</div>
-			<div class="row container col-xs-12 col-sm-12 col-md-6 col-lg-10">
-				<input type="text" class="form-control" placeholder="Ex. Javascript" ng-model="search">
-			</div>
-		</div>
-		<div class="row category-filter search-row container col-xs-12 col-sm-12 col-md-6 col-lg-4">
-			<form>
-		    <label>Filter by Category: &nbsp;</label>
-		    <select ng-model="category">
-		      <option ng-repeat="option in myOptions" value="{{ option.category }}">{{ option.category }}</option>
-		    </select>
-		  </form>
-	 </div>
+<div class="background-grade">
+	<div class="section-2">
+		<div id="create-section" ng-include="'app/views/new.html'"></div>
 	</div>
-	<div class="sec-3-cards">
-		<div id="cards-section" class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
-			<div class="flashcards well-container">
-				<div class="well">
-					<div class="front">
-						<div class="card-hdr-front"><h4>{{ card.category }}</h4></div>
-						<div class="card-body-front">{{ card.front }}</div>
-					</div>
-					<div class="back">
-						<p class="back-content">{{ card.back }}</p>
-						<div class="back-btns">
-							<a ng-href="/flashcards/delete/{{ card._id }}" class="btn trash-btn"><i class="fa fa-trash-o fa-lg"></i></a>
-							<a ng-click="showUpdate($index)" class="btn btn-primary pull-right">Update</a>
+
+	<div class="section-3" id="search-section">
+		<h2>Search Flashcards and Filter by Study Topic</h2>
+		<div class="section-3-filters">	
+			<div class="section-3-hdr">
+				<div>
+					<label>Search:</label>
+				</div>
+				<div class="row container col-xs-12 col-sm-12 col-md-6 col-lg-10">
+					<input type="text" class="form-control" placeholder="Ex. Javascript" ng-model="search">
+				</div>
+			</div>
+			<div class="row category-filter search-row container col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<form>
+			    <label>Filter by Category: &nbsp;</label>
+			    <select ng-model="category">
+			      <option ng-repeat="option in myOptions" value="{{ option.category }}">{{ option.category }}</option>
+			    </select>
+			  </form>
+		 </div>
+		</div>
+		<div class="sec-3-cards">
+			<div id="cards-section" class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
+				<div class="flashcards well-container">
+					<div class="well">
+						<div class="front">
+							<div class="card-hdr-front"><h4>{{ card.category }}</h4></div>
+							<div class="card-body-front">{{ card.front }}</div>
+						</div>
+						<div class="back">
+							<p class="back-content">{{ card.back }}</p>
+							<div class="back-btns">
+								<a ng-href="/flashcards/delete/{{ card._id }}" class="btn trash-btn"><i class="fa fa-trash-o fa-lg"></i></a>
+								<a ng-click="showUpdate($index)" class="btn btn-primary pull-right">Update</a>
+							</div>
 						</div>
 					</div>
 				</div>
