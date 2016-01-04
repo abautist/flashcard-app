@@ -1,7 +1,9 @@
 # Retrieval
-A simple MEAN stack web application to create and use flashcards.
+A simple MEAN stack web application with authentication to create and use flashcards.
 
-Retrieval was created as a full-stack project for General Assembly Seattle's Web Development Immersive. Too often are we utilizing ineffective study techniques to prepare for an interview or exam. We try to read and re-read material, cramming in as much information as we can. Study approaches such as cramming is ineffectual if long-term retention is your goal. 
+Retrieval was created as a full-stack project for General Assembly Seattle's Web Development Immersive. 
+
+Too often are we utilizing ineffective study techniques to prepare for an interview or exam. We try to read and re-read material, cramming in as much information as we can. Study approaches such as cramming is ineffectual if long-term retention is your goal. 
 
 Active retrieval usings tools like flashcards makes learning stick and will have lasting benefits to understanding the original material.
 
@@ -18,20 +20,21 @@ Active retrieval usings tools like flashcards makes learning stick and will have
 * Heroku
 * ng-Lettering.js
 
-### Node Modules
-* bcrypt
-* body-parser
-* express
-* express-jwt
-* jsonwebtoken
-* mongoose
-* mongoose-validator
-* ng-smooth-scroll
-* node-mongo-seeds
+### Installation
+
+* npm install
+	* Node Modules: bcrypt, body-parser, express, express-jwt, jsonwebtoken, mongoose, mongoose-validator, ng-smooth-scroll, node-mongo-seeds
 
 ### Approach Taken
 
 Started off brainstorming design ideas with wireframes and entity relationship diagrams (ERDs). From there, I built a basic skeleton of the app, setting up the backend using Express/Node.js as well as creating my own API to be called to the front-end. After that, worked on building out the front-end using AngularJS and lastly polishing up the site with SASS.
+
+### User Stories
+
+* For studying purposes, as a user I can create, update and/or delete a flashcard
+* As a user I can search by keyword and filter by category of existing flashing cards in the database
+
+### Screenshots
 
 ![Retrieval Screenshot 1](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.05.52%20AM.png "Retrieval Screenshot 1")
 
@@ -39,8 +42,8 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 
 ![Retrieval Screenshot 3](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.07.34%20AM.png "Retrieval Screenshot 3")
 
-### Known Issues / Features to be Added
-* Mobile design
+### Features to be Added
+* Mobile design \* UPDATED Jan. 4 added responsive design
 * Add relationships/restrictions between created cards and CurrentUser
 
 

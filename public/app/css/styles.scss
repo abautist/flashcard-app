@@ -144,7 +144,7 @@ body {
 
 .login {
 	padding-top: 10%;
-	padding-bottom: 100%;
+	padding-bottom: 80%;
 
 	legend {
 		font-size: 46px;
@@ -172,12 +172,12 @@ body {
 		text-align: center;
 
 		.btn {
-		padding: 9px 24px;
-		font-size: 24px;
-		color: white;
-		border-radius: 0px;
-		border: 2px solid #ccc;
-		background: transparent;
+			padding: 9px 24px;
+			font-size: 24px;
+			color: white;
+			border-radius: 0px;
+			border: 2px solid #ccc;
+			background: transparent;
 
 		&:hover {
 			background: #ccc;
@@ -552,6 +552,10 @@ body {
 		}
 	}
 
+	.login {
+		padding-bottom: 30%;
+	}
+
 	.section-1 {
 		border-top: 1px solid white;
 		
@@ -596,117 +600,21 @@ body {
 		}
 	}
 
-
 	.section-3 {
-	height: 700px;
-	h2 {
-		text-align: center;
-		font-size: 36px;
-		font-weight: 100px;
-		color: white;
-		margin-bottom: 3%;
-	}
-	.section-3-filters {
-		label {
-			font-size: 24px;
-			font-weight: 100;
-			color: white;
-			margin-left: 20%;
-		}
-		.form-control {
-			background: transparent;
-			border-radius: 0;
-			color: white;
-			border: 1px solid white;
-			box-shadow: none;
-			outline: none;
-		}
 
-		.category-filter {
-			text-align: center;
-			margin-bottom: 3%;
-			select {
-				margin-left: 2%;
-				width: 30%;
-			   -webkit-appearance: value;
-			   -moz-appearance: value;
-			   appearance: value;
+		.section-3-filters {
+
+			label {
+				font-size: $label-font-size;
+			}
+
+			.category-filter {
+
+				select {
+					margin-left: 2%;
+					width: 30%;
+				}
 			}
 		}
 	}
-	.sec-3-cards {
-		.well-container {
-			box-shadow: 0 20px 12px -12px #323232;
-			perspective: 1000;
-			&:hover .well {
-				transform: rotateY(180deg);
-				}
-			.well {
-				transition: .8s;
-				transform-style: preserve-3d;
-				height: 240px;
-			}
-			.front, 
-			.back {
-				-webkit-backface-visibility: hidden;
-				backface-visibility: hidden;
-				position: absolute;
-				width: 90%;
-				height: 90%;
-			}
-
-			.front {
-				z-index: 2;
-				transform: rotateY(0deg);
-				.card-hdr-front {
-					border-bottom: 2px solid #323232;
-					h4 {
-						font-size: 20px;
-						font-weight: 900;
-					}
-				}
-				.card-body-front {
-					padding-top: 3%;
-				}
-				
-			}
-
-			.back {
-				transform: rotateY(180deg);
-				margin-top: 2%;
-				.back-content {
-					height: 65%;
-				}
-				.back-btns {
-					top: 90%;
-					.trash-btn {
-						color: #ccc;
-						border-radius: 0px;
-						border: 1px solid #ccc;
-						background: transparent;
-						&:hover {
-							background: #cc0000;
-							color: #660000;
-							border: none;
-						}
-					}
-				}
-			}
-
-			.btn {
-				font-size: 16px;
-				color: #ccc;
-				border-radius: 0px;
-				border: 1px solid #ccc;
-				background: transparent;
-				&:hover {
-					background: #ccc;
-					color: black;
-				}
-			}
-		}	
-	}		
-}
-
-
 }
