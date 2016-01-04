@@ -42,6 +42,8 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 
 ![Retrieval Screenshot 3](https://github.com/abautist/flashcard-app/blob/master/public/app/images/browser3.png "Retrieval Screenshot 3")
 
+### Mobile Screenshot
+
 ![Retrieval Mobile Screenshot](https://github.com/abautist/flashcard-app/blob/master/public/app/images/mobile1.png "Retrieval Mobile Screenshot")
 
 ### Features to be Added
