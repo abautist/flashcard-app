@@ -22,7 +22,7 @@ Active retrieval usings tools like flashcards makes learning stick and will have
 
 ### Installation
 
-* npm install
+* ````npm install````
 	* Node Modules: bcrypt, body-parser, express, express-jwt, jsonwebtoken, mongoose, mongoose-validator, ng-smooth-scroll, node-mongo-seeds
 
 ### Approach Taken
@@ -31,8 +31,8 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 
 ### User Stories
 
-* As a user I can view existing flashcards and search by keyword and filter by category
-* After a successful login, I can create, update and/or delete flashcards
+* ````As a user I can view existing flashcards and search by keyword and filter by category````
+* ````After a successful login, I can create, update and/or delete flashcards````
 
 ### Screenshots
 
@@ -43,7 +43,7 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 ![Retrieval Screenshot 3](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.07.34%20AM.png "Retrieval Screenshot 3")
 
 ### Features to be Added
-* Mobile design \* UPDATED Jan. 4 added responsive design
+* Mobile design \*UPDATED 1/4/16: now with responsive design
 * Add relationships/restrictions between created cards and CurrentUser
 
 
