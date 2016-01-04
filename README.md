@@ -47,7 +47,7 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 ![Retrieval Mobile Screenshot](https://github.com/abautist/flashcard-app/blob/master/public/app/images/mobile1.png "Retrieval Mobile Screenshot")
 
 ### Features to be Added
-* Mobile design \*UPDATED 1/4/16: now with responsive design
+* \*UPDATED 1/4/16: now with responsive design
 * Add relationships/restrictions between created cards and CurrentUser
 
 
