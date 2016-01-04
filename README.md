@@ -36,11 +36,13 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 
 ### Screenshots
 
-![Retrieval Screenshot 1](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.05.52%20AM.png "Retrieval Screenshot 1")
+![Retrieval Screenshot 1](https://github.com/abautist/flashcard-app/blob/master/public/app/images/browser1.png "Retrieval Screenshot 1")
 
-![Retrieval Screenshot 2](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.06.25%20AM.png "Retrieval Screenshot 2")
+![Retrieval Screenshot 2](https://github.com/abautist/flashcard-app/blob/master/public/app/images/browser2.png "Retrieval Screenshot 2")
 
-![Retrieval Screenshot 3](https://github.com/abautist/flashcard-app/blob/master/public/app/images/Screen%20Shot%202015-12-18%20at%2010.07.34%20AM.png "Retrieval Screenshot 3")
+![Retrieval Screenshot 3](https://github.com/abautist/flashcard-app/blob/master/public/app/images/browser3.png "Retrieval Screenshot 3")
+
+![Retrieval Mobile Screenshot](https://github.com/abautist/flashcard-app/blob/master/public/app/images/mobile1.png "Retrieval Mobile Screenshot")
 
 ### Features to be Added
 * Mobile design \*UPDATED 1/4/16: now with responsive design
