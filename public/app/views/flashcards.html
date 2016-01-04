@@ -52,7 +52,7 @@
 						</div>
 						<div class="back">
 							<p class="back-content">{{ card.back }}</p>
-							<div class="back-btns">
+							<div class="back-btns" ng-show="isLoggedIn()">
 								<a ng-href="/flashcards/delete/{{ card._id }}" class="btn trash-btn"><i class="fa fa-trash-o fa-lg"></i></a>
 								<a ng-click="showUpdate($index)" class="btn btn-primary pull-right">Update</a>
 							</div>

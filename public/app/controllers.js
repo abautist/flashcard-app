@@ -104,8 +104,6 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	'Flashcard',
 	function($scope, $route, $window, Flashcard) {
 
-		$scope.cardCreated = false;
-
 		$scope.createFlashcard = function() {
 			
 			var params = {

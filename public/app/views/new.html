@@ -2,8 +2,8 @@
 <div class="container create" ng-controller="FlashcardNewCtrl">
 	<div class="create-hdr">Add a new card here!</div>
 	<p class="form-group">Exercise your brain and level up on your studying. Add flashcards to improve your ability to practice and retain core concepts.</p>
-	<p class="note"><em>Note: You must be logged in to create a card.</em></p>
-	<form ng-submit="createFlashcard()">
+	<p class="note"><em>Note: User must be logged in to create a card</em></p>
+	<form>
 		<div class="form-group col-xs-12 col-sm-12 col-md-10 col-lg-9">
 			<div class="row">
 				<div>
@@ -42,11 +42,7 @@
 			</div>
 		</div>
 		<div class="form-btn">
-			<button type="submit" class="create-form-btn animated pulse infinite btn btn-primary">Create!</button>
+			<button type="button" ng-show="isLoggedIn()" ng-click="createFlashcard()" class="create-form-btn animated pulse infinite btn btn-primary">Create!</button>
 		</div>
-		<div class="alert alert-success" ng-show="cardCreated">
-			<p>Flashcard Created! Scroll down to check it out.</p>
-		</div>
-
 	</form>
 </div>

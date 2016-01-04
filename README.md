@@ -31,8 +31,8 @@ Started off brainstorming design ideas with wireframes and entity relationship d
 
 ### User Stories
 
-* For studying purposes, as a user I can create, update and/or delete a flashcard
-* As a user I can search by keyword and filter by category of existing flashing cards in the database
+* As a user I can view existing flashcards and search by keyword and filter by category
+* After a successful login, I can create, update and/or delete flashcards
 
 ### Screenshots
 

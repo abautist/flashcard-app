@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/api/flashcards", expressJWT({ secret: secret }));
+// app.use("/api/flashcards", expressJWT({ secret: secret }));
 app.use("/api/users", expressJWT({ secret: secret })
 .unless({path: ["/api/users"], method: "post"}));
 
