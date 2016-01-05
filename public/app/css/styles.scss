@@ -209,14 +209,12 @@ body {
 	z-index: 99;
 	background-size: 100% 100%;
 	text-align: center;
-	width: 100%;
 	height: 800px;
 
 	h1.title {
 		padding-top: 20%;
 		font-family: "Crushed";
 		font-size: 90px;
-		font-weight: 900;
 		color: white;
 		
 		.char3 {
@@ -567,6 +565,8 @@ body {
 		h1.title {
 			padding-top: 0%;
 			font-size: 200px;
+			font-weight: 900;
+
 
 			.char3 {
 				font-size: 250px;
