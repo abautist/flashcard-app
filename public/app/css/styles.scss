@@ -54,6 +54,8 @@ $label-font-size: 24px;
 html {
 	font-family: "Ubuntu";
 	@include background-gradient;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 body {
@@ -61,6 +63,7 @@ body {
 	margin: 0;
 	background: transparent;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .navbar {
