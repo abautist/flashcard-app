@@ -520,6 +520,12 @@ body {
 }
 
 @media (min-width: 768px) {
+
+	body, html {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
 	.navbar {
 		background-color: transparent;
 	}
