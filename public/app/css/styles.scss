@@ -60,6 +60,7 @@ body {
 	font-family: "Ubuntu";
 	margin: 0;
 	background: transparent;
+	width: 100%;
 }
 
 .navbar {
@@ -520,11 +521,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
-	body, html {
-		width: 100%;
-		overflow-x: hidden;
-	}
 
 	.navbar {
 		background-color: transparent;
