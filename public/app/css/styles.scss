@@ -369,50 +369,32 @@ body {
 	}
 
 	.sec-3-cards {
-		.well-container {
-			box-shadow: 0 20px 12px -12px #323232;
-			perspective: 1000;
+		.cards-well {
+			height: 240px;
+			background: transparent;
+			// box-shadow: 0 20px 12px -12px #323232;
+			// perspective: 1000;
 
-			&:hover .well {
-				transform: rotateY(180deg);
-				}
-
-			.well {
-				transition: .8s;
-				transform-style: preserve-3d;
-				height: 240px;
+			#cards-content {
+				background: white;
+				height: 220px;
 			}
 
-			.front, 
+			#cards-back {
+				z-index: 999;
+				padding: 3%;
+				width: 435px;
+				position: absolute;
+				top: 15px;
+				border: 1px solid black;
+			}
+
 			.back {
-				-webkit-backface-visibility: hidden;
-				backface-visibility: hidden;
+				// -webkit-backface-visibility: hidden;
+				// backface-visibility: hidden;				
 				position: absolute;
 				width: 90%;
 				height: 90%;
-			}
-
-			.front {
-				z-index: 2;
-				transform: rotateY(0deg);
-
-				.card-hdr-front {
-					border-bottom: 2px solid #323232;
-					
-					h4 {
-						font-size: 20px;
-						font-weight: 900;
-					}
-				}
-
-				.card-body-front {
-					padding-top: 3%;
-				}
-				
-			}
-
-			.back {
-				transform: rotateY(180deg);
 				margin-top: 2%;
 
 				.back-content {
@@ -437,6 +419,7 @@ body {
 			}
 
 			.btn {
+				margin-right: 5%;
 				font-size: 16px;
 				color: #ccc;
 				border-radius: 10%;

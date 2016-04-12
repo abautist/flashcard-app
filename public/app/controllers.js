@@ -54,6 +54,13 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	}
 	start();
 
+	$scope.well = false;
+
+	// $scope.flipCard = function(context){
+		
+	// 	$scope.flipped = !$scope.flipped;
+	// }
+
 	 $scope.showUpdate = function(idx) {
 	 	var selectedFlashcard = $scope.flashcards[idx];
 

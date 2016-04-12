@@ -5,12 +5,16 @@ html {
   background: #114357;
   background: -webkit-linear-gradient(to bottom, #114357, #F29492);
   background: linear-gradient(to bottom, #114357, #F29492);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden; }
 
 body {
   font-family: "Ubuntu";
   margin: 0;
-  background: transparent; }
+  background: transparent;
+  width: 100%;
+  overflow-x: hidden; }
 
 .navbar {
   background-color: rgba(40, 40, 40, 0.9);
@@ -113,13 +117,11 @@ body {
   z-index: 99;
   background-size: 100% 100%;
   text-align: center;
-  width: 100%;
   height: 800px; }
   .section-1 h1.title {
     padding-top: 20%;
     font-family: "Crushed";
     font-size: 90px;
-    font-weight: 900;
     color: white; }
     .section-1 h1.title .char3 {
       color: red;
@@ -244,55 +246,45 @@ body {
         -webkit-appearance: value;
         -moz-appearance: value;
         appearance: value; }
-  .section-3 .sec-3-cards .well-container {
-    box-shadow: 0 20px 12px -12px #323232;
-    perspective: 1000; }
-    .section-3 .sec-3-cards .well-container:hover .well {
-      transform: rotateY(180deg); }
-    .section-3 .sec-3-cards .well-container .well {
-      transition: .8s;
-      transform-style: preserve-3d;
-      height: 240px; }
-    .section-3 .sec-3-cards .well-container .front,
-    .section-3 .sec-3-cards .well-container .back {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+  .section-3 .sec-3-cards .cards-well {
+    height: 240px;
+    background: transparent; }
+    .section-3 .sec-3-cards .cards-well #cards-content {
+      background: white;
+      height: 220px; }
+    .section-3 .sec-3-cards .cards-well #cards-back {
+      z-index: 999;
+      padding: 3%;
+      width: 435px;
+      position: absolute;
+      top: 15px;
+      border: 1px solid black; }
+    .section-3 .sec-3-cards .cards-well .back {
       position: absolute;
       width: 90%;
-      height: 90%; }
-    .section-3 .sec-3-cards .well-container .front {
-      z-index: 2;
-      transform: rotateY(0deg); }
-      .section-3 .sec-3-cards .well-container .front .card-hdr-front {
-        border-bottom: 2px solid #323232; }
-        .section-3 .sec-3-cards .well-container .front .card-hdr-front h4 {
-          font-size: 20px;
-          font-weight: 900; }
-      .section-3 .sec-3-cards .well-container .front .card-body-front {
-        padding-top: 3%; }
-    .section-3 .sec-3-cards .well-container .back {
-      transform: rotateY(180deg);
+      height: 90%;
       margin-top: 2%; }
-      .section-3 .sec-3-cards .well-container .back .back-content {
+      .section-3 .sec-3-cards .cards-well .back .back-content {
         height: 65%; }
-      .section-3 .sec-3-cards .well-container .back .back-btns {
+      .section-3 .sec-3-cards .cards-well .back .back-btns {
         top: 90%; }
-        .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn {
+        .section-3 .sec-3-cards .cards-well .back .back-btns .trash-btn {
           color: #ccc;
           border-radius: 10%;
           border: 1px solid #ccc;
           background: transparent; }
-          .section-3 .sec-3-cards .well-container .back .back-btns .trash-btn:hover {
+          .section-3 .sec-3-cards .cards-well .back .back-btns .trash-btn:hover {
             background: #cc0000;
             color: #660000;
             border: none; }
-    .section-3 .sec-3-cards .well-container .btn {
+    .section-3 .sec-3-cards .cards-well .btn {
+      margin-right: 5%;
       font-size: 16px;
       color: #ccc;
       border-radius: 10%;
       border: 1px solid #ccc;
       background: transparent; }
-      .section-3 .sec-3-cards .well-container .btn:hover {
+      .section-3 .sec-3-cards .cards-well .btn:hover {
         background: #ccc;
         color: black; }
 
@@ -381,7 +373,8 @@ body {
     border-top: 1px solid white; }
     .section-1 h1.title {
       padding-top: 0%;
-      font-size: 200px; }
+      font-size: 200px;
+      font-weight: 900; }
       .section-1 h1.title .char3 {
         font-size: 250px; }
 

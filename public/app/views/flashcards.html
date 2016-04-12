@@ -43,22 +43,31 @@
 		 </div>
 		</div>
 		<div class="sec-3-cards">
-			<div id="cards-section" class="col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
-				<div class="flashcards well-container">
-					<div class="well">
-						<div class="front">
-							<div class="card-hdr-front"><h4>{{ card.category }}</h4></div>
-							<div class="card-body-front">{{ card.front }}</div>
-						</div>
-						<div class="back">
+			<div id="cards-section" class="cards-well col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="card in flashcards | filter: category | filter: search">
+				<div id="cards-content" class="well" ng-click="well.show=true">
+					<div ng-hide="well.show">
+					{{ card.category }} <br />
+					{{ card.front }}
+					</div>
+					<div id="cards-back" class="well" ng-show="well.show">
+					{{ card.back }}
+					</div>
+				</div>
+			</div>
+				
+			</div>
+
+
+
+
+
+<!-- 						<div class="back">
 							<p class="back-content">{{ card.back }}</p>
 							<div class="back-btns" ng-show="isLoggedIn()">
 								<a ng-href="/flashcards/delete/{{ card._id }}" class="btn trash-btn"><i class="fa fa-trash-o fa-lg"></i></a>
 								<a ng-click="showUpdate($index)" class="btn btn-primary pull-right">Update</a>
 							</div>
-						</div>
-					</div>
-				</div>
+						</div> -->
 			</div>
 		</div>
 	</div>
