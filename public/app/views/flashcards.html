@@ -47,7 +47,8 @@
 				<button class="pull-right" ng-click="well.show=!well.show">Flip</button>
 				<div id="cards-content" class="well">
 					<div ng-hide="well.show">
-						{{ card.category }} <br />
+						<div id="card-header">{{ card.category }}</div> 
+						<br />
 						{{ card.front }}
 					</div>
 					<div id="cards-back" class="" ng-show="well.show">
@@ -56,7 +57,7 @@
 						</div>
 						<div class="back-btns" ng-show="isLoggedIn()">
 							<a ng-href="/flashcards/delete/{{ card._id }}" class="btn trash-btn"><i class="fa fa-trash-o fa-lg"></i></a>
-							<a ng-click="showUpdate($index)" class="btn btn-primary pull-right">Update</a>
+							<a ng-click="showUpdate($index)" class="btn update-btn pull-right">Update</a>
 						</div>
 					</div>
 					

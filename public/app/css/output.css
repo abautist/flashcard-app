@@ -252,8 +252,12 @@ body {
     .section-3 .sec-3-cards .cards-well #cards-content {
       background: white;
       height: 220px; }
+      .section-3 .sec-3-cards .cards-well #cards-content #card-header {
+        border-bottom: 1px solid black;
+        font-size: 150%; }
     .section-3 .sec-3-cards .cards-well #cards-back {
       z-index: 999;
+      margin-top: 10px;
       padding: 3%;
       width: 420px;
       position: absolute;
@@ -269,25 +273,12 @@ body {
           background: #cc0000;
           color: #660000;
           border: none; }
-    .section-3 .sec-3-cards .cards-well .back {
-      position: absolute;
-      width: 90%;
-      height: 90%;
-      margin-top: 2%; }
-      .section-3 .sec-3-cards .cards-well .back .back-content {
-        height: 65%; }
-      .section-3 .sec-3-cards .cards-well .back .back-btns {
-        top: 90%; }
-    .section-3 .sec-3-cards .cards-well .btn {
-      margin-right: 5%;
-      font-size: 16px;
-      color: #ccc;
-      border-radius: 10%;
-      border: 1px solid #ccc;
-      background: transparent; }
-      .section-3 .sec-3-cards .cards-well .btn:hover {
-        background: #ccc;
-        color: black; }
+      .section-3 .sec-3-cards .cards-well #cards-back .update-btn {
+        color: #ccc;
+        border: 1px solid #ccc; }
+        .section-3 .sec-3-cards .cards-well #cards-back .update-btn:hover {
+          background: gray;
+          color: black; }
 
 .modal-header {
   color: white;

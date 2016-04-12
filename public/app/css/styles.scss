@@ -375,13 +375,20 @@ body {
 			// box-shadow: 0 20px 12px -12px #323232;
 			// perspective: 1000;
 
+
 			#cards-content {
 				background: white;
 				height: 220px;
+
+				#card-header {
+					border-bottom: 1px solid black;
+					font-size: 150%;
+				}
 			}
 
 			#cards-back {
 				z-index: 999;
+				margin-top: 10px;
 				padding: 3%;
 				width: 420px;
 				position: absolute;
@@ -403,39 +410,15 @@ body {
 						border: none;
 					}
 				}
-			}
 
+				.update-btn {
+					color: #ccc;
+					border: 1px solid #ccc;
 
-
-			.back {
-				// -webkit-backface-visibility: hidden;
-				// backface-visibility: hidden;				
-				position: absolute;
-				width: 90%;
-				height: 90%;
-				margin-top: 2%;
-
-				.back-content {
-					height: 65%;
-				}
-				.back-btns {
-					top: 90%;
-
-
-				}
-			}
-
-			.btn {
-				margin-right: 5%;
-				font-size: 16px;
-				color: #ccc;
-				border-radius: 10%;
-				border: 1px solid #ccc;
-				background: transparent;
-
-				&:hover {
-					background: #ccc;
-					color: black;
+					&:hover {
+						background: gray;
+						color: black;
+					}	
 				}
 			}
 		}	
