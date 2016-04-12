@@ -54,7 +54,7 @@ angular.module("FlashcardCtrls", ['FlashcardServices'])
 	}
 	start();
 
-	$scope.well = false;
+	// $scope.flipped = false;
 
 	// $scope.flipCard = function(context){
 		

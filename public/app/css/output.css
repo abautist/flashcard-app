@@ -255,10 +255,20 @@ body {
     .section-3 .sec-3-cards .cards-well #cards-back {
       z-index: 999;
       padding: 3%;
-      width: 435px;
+      width: 420px;
       position: absolute;
-      top: 15px;
-      border: 1px solid black; }
+      top: 15px; }
+      .section-3 .sec-3-cards .cards-well #cards-back #back-content {
+        height: 130px; }
+      .section-3 .sec-3-cards .cards-well #cards-back .trash-btn {
+        color: #ccc;
+        border-radius: 10%;
+        border: 1px solid #ccc;
+        background: transparent; }
+        .section-3 .sec-3-cards .cards-well #cards-back .trash-btn:hover {
+          background: #cc0000;
+          color: #660000;
+          border: none; }
     .section-3 .sec-3-cards .cards-well .back {
       position: absolute;
       width: 90%;
@@ -268,15 +278,6 @@ body {
         height: 65%; }
       .section-3 .sec-3-cards .cards-well .back .back-btns {
         top: 90%; }
-        .section-3 .sec-3-cards .cards-well .back .back-btns .trash-btn {
-          color: #ccc;
-          border-radius: 10%;
-          border: 1px solid #ccc;
-          background: transparent; }
-          .section-3 .sec-3-cards .cards-well .back .back-btns .trash-btn:hover {
-            background: #cc0000;
-            color: #660000;
-            border: none; }
     .section-3 .sec-3-cards .cards-well .btn {
       margin-right: 5%;
       font-size: 16px;

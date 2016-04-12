@@ -383,11 +383,29 @@ body {
 			#cards-back {
 				z-index: 999;
 				padding: 3%;
-				width: 435px;
+				width: 420px;
 				position: absolute;
 				top: 15px;
-				border: 1px solid black;
+
+				#back-content {
+					height: 130px;
+				}
+
+				.trash-btn {
+					color: #ccc;
+					border-radius: 10%;
+					border: 1px solid #ccc;
+					background: transparent;
+
+					&:hover {
+						background: #cc0000;
+						color: #660000;
+						border: none;
+					}
+				}
 			}
+
+
 
 			.back {
 				// -webkit-backface-visibility: hidden;
@@ -403,18 +421,7 @@ body {
 				.back-btns {
 					top: 90%;
 
-					.trash-btn {
-						color: #ccc;
-						border-radius: 10%;
-						border: 1px solid #ccc;
-						background: transparent;
 
-						&:hover {
-							background: #cc0000;
-							color: #660000;
-							border: none;
-						}
-					}
 				}
 			}
 
